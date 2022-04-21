@@ -3,7 +3,14 @@
 
 .block {
 
-  &__red {
+  &__text {
+    color: green;
+    font-size: 35px;
+  }
+
+  &__text-2 {
     display: flex;
+    color: red;
+    line-height: 15px;
   }
 }

@@ -10,8 +10,15 @@ color {
   color: green;
 }
 
-.block__red {
+.block__text {
+  color: green;
+  font-size: 35px;
+}
+
+.block__text-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: red;
+  line-height: 15px;
 }
