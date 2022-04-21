@@ -9,3 +9,9 @@ color {
 .block__fird {
   color: green;
 }
+
+.block__red {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

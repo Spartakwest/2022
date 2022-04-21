@@ -1,1 +1,9 @@
 @import "_nullstyle";
+
+
+.block {
+
+  &__red {
+    display: flex;
+  }
+}
