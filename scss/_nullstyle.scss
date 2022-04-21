@@ -1,0 +1,13 @@
+body {
+  color: red;
+}
+color {
+  color:blue;
+}
+.block {
+
+  &__fird {
+    color: green;
+  }
+}
+
