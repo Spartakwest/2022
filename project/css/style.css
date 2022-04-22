@@ -90,6 +90,26 @@ h6 {
 .text-1 {
   border: 1px solid green;
   width: 80%;
-  height: 20px;
-  margin: 0px auto;
+  margin: 0px auto 30px;
+  -webkit-columns: 300px auto;
+          columns: 300px auto;
+}
+
+.text-2 {
+  widows: 1000px;
+  border: 1px solid #000;
+  -webkit-columns: auto 4;
+          columns: auto 4;
+  margin: 0px 0px 30px 0px;
+}
+
+.text-3 {
+  font-size: 25px;
+}
+
+.text-3:hover {
+  color: red;
+  -webkit-transform: skewX(20deg);
+      -ms-transform: skewX(20deg);
+          transform: skewX(20deg);
 }
