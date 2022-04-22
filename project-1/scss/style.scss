@@ -1,0 +1,34 @@
+@import "_nullstyle";
+
+
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0px auto;
+  padding: 30px;
+  div {
+    margin: 0px 0px 10px 0px;
+    font-size: 18px;
+  }
+}
+.text-1 {
+  font-size: 18px;
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+}
+.text-2 {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: dotted;
+}
+.text-3 {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style:dashed;
+}
+.text-4 {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: double;
+}
