@@ -11,14 +11,11 @@
   border: 1px solid #000;
   columns: auto 4;
   margin: 0px 0px 30px 0px;
-  
+  column-gap: 30px;
+  column-rule: 1px dashed grey;
 }
 
 
 .text-3 {
-  font-size: 25px;
-  &:hover {
-    color:red;
-    transform:skewX(20deg);
-  }
+  
 }
