@@ -16,6 +16,18 @@
 }
 
 
-.text-3 {
-  
+.text-4 {
+  width: 400px;
+  margin: 0px auto 20px;
+  &::selection {
+    color:white;
+    background-color: green;
+  }
+}
+
+table, td, th {
+	border: 1px solid black;
+}
+.table {
+  margin: 0px auto;
 }

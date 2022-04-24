@@ -106,3 +106,26 @@ h6 {
   -webkit-column-rule: 1px dashed grey;
           column-rule: 1px dashed grey;
 }
+
+.text-4 {
+  width: 400px;
+  margin: 0px auto 20px;
+}
+
+.text-4::-moz-selection {
+  color: white;
+  background-color: green;
+}
+
+.text-4::selection {
+  color: white;
+  background-color: green;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+.table {
+  margin: 0px auto;
+}
