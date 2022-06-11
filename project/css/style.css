@@ -87,3 +87,32 @@ h6 {
 }
 
 /*-----------------------------------------*/
+.text-form {
+  border: 1px solid black;
+}
+
+.text-form:focus {
+  border: 2px solid black;
+  -webkit-box-shadow: 0px 0px 2px black;
+          box-shadow: 0px 0px 2px black;
+}
+
+.red {
+  border-color: red;
+}
+
+.red-text {
+  color: red;
+}
+
+.height {
+  height: 31px;
+}
+
+.mb {
+  margin-bottom: 7px;
+}
+
+.pl {
+  padding-left: 2px;
+}
