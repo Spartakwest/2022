@@ -1,5 +1,9 @@
 @import "_nullstyle";
 
+body {
+  padding: 20px;
+  margin-bottom: 20px;
+}
 .text-form {
   border: 1px solid black;
   &:focus {
@@ -16,9 +20,65 @@
 .height {
   height: 31px;
 }
-.mb {
+.mb,
+p {
   margin-bottom: 7px;
 }
 .pl {
   padding-left: 2px;
+}
+.parea {
+  padding: 10px;
+}
+.width {
+  width: 300px;
+  &-2 {
+    width: 380px;
+  }
+  &-3 {
+    width: 200px;
+  }
+}
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.resize {
+  &-horisontal {
+    resize: horizontal;
+  }
+  &-vertical {
+    resize: vertical;
+  }
+  &-none {
+    resize: none;
+  }
+  &-min-max {
+    resize: both;
+    min-width: 100px;
+    max-width: 300px;
+    min-height: 50px;
+    max-height: 600px;
+  }
+  &-width {
+    &-3 {
+      min-width: 200px;
+      max-width: 200px;
+    }
+  }
+}
+.placeholder {
+  &-green::placeholder {
+    color: green;
+  }
+  &-green-2::placeholder {
+    color: rgb(6, 103, 76);
+  }
+}
+
+footer {
+  height: 20px;
+}
+:disabled {
+  background-color: rgb(196, 193, 193);
 }

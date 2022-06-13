@@ -87,6 +87,11 @@ h6 {
 }
 
 /*-----------------------------------------*/
+body {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
 .text-form {
   border: 1px solid black;
 }
@@ -109,10 +114,97 @@ h6 {
   height: 31px;
 }
 
-.mb {
+.mb,
+p {
   margin-bottom: 7px;
 }
 
 .pl {
   padding-left: 2px;
+}
+
+.parea {
+  padding: 10px;
+}
+
+.width {
+  width: 300px;
+}
+
+.width-2 {
+  width: 380px;
+}
+
+.width-3 {
+  width: 200px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.resize-horisontal {
+  resize: horizontal;
+}
+
+.resize-vertical {
+  resize: vertical;
+}
+
+.resize-none {
+  resize: none;
+}
+
+.resize-min-max {
+  resize: both;
+  min-width: 100px;
+  max-width: 300px;
+  min-height: 50px;
+  max-height: 600px;
+}
+
+.resize-width-3 {
+  min-width: 200px;
+  max-width: 200px;
+}
+
+.placeholder-green::-webkit-input-placeholder {
+  color: green;
+}
+
+.placeholder-green:-ms-input-placeholder {
+  color: green;
+}
+
+.placeholder-green::-ms-input-placeholder {
+  color: green;
+}
+
+.placeholder-green::placeholder {
+  color: green;
+}
+
+.placeholder-green-2::-webkit-input-placeholder {
+  color: #06674c;
+}
+
+.placeholder-green-2:-ms-input-placeholder {
+  color: #06674c;
+}
+
+.placeholder-green-2::-ms-input-placeholder {
+  color: #06674c;
+}
+
+.placeholder-green-2::placeholder {
+  color: #06674c;
+}
+
+footer {
+  height: 20px;
+}
+
+:disabled {
+  background-color: #c4c1c1;
 }
