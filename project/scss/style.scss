@@ -75,10 +75,31 @@ h3 {
     color: rgb(6, 103, 76);
   }
 }
-
+.btn {
+  &-wh {
+    width: 200px;
+    padding: 10px;
+  }
+}
 footer {
   height: 20px;
 }
 :disabled {
   background-color: rgb(196, 193, 193);
+}
+.focus {
+  border: 1px solid #000;
+  &-red:focus {
+    outline: 1px solid red;
+  }
+  &-pink:focus {
+    box-shadow: 0px 0px 5px red;
+  }
+}
+input:checked + label {
+  color: red;
+}
+
+input:disabled {
+  border: 1px solid red;
 }

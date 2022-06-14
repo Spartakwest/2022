@@ -201,10 +201,36 @@ h3 {
   color: #06674c;
 }
 
+.btn-wh {
+  width: 200px;
+  padding: 10px;
+}
+
 footer {
   height: 20px;
 }
 
 :disabled {
   background-color: #c4c1c1;
+}
+
+.focus {
+  border: 1px solid #000;
+}
+
+.focus-red:focus {
+  outline: 1px solid red;
+}
+
+.focus-pink:focus {
+  -webkit-box-shadow: 0px 0px 5px red;
+          box-shadow: 0px 0px 5px red;
+}
+
+input:checked + label {
+  color: red;
+}
+
+input:disabled {
+  border: 1px solid red;
 }
