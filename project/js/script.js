@@ -399,3 +399,254 @@ let str = "abcde";
 console.log(str.indexOf("c"));
 // Дана строка. Проверьте, есть ли в этой строке символ 'a'.
 console.log(str.indexOf("a"));
+
+//Дана строка. Проверьте, есть ли в этой строке символ 'a'.
+let str = "abcde";
+if (str.indexOf("a") >= 0) {
+  console.log("Так");
+} else {
+  console.log("Ні");
+}
+
+// Дана строка. Проверьте, начинается ли эта строка с символа 'a'.
+let str = "abcde";
+if (str.indexOf("a") === 0) {
+  console.log("'Починається на'a'");
+} else {
+  console.log("не починається");
+}
+
+// Дана строка. Проверьте, заканчивается ли эта строка на символ 'a'.
+let str = "abxde";
+console.log(str.lastIndexOf("a"), str.length - 1);
+
+if (str.lastIndexOf("a") === str.length - 1) {
+  console.log("так");
+} else {
+  console.log("ні");
+}
+
+// Дана строка. Проверьте, начинается ли эта строка на 'http://'.
+
+let str = "http://www.google.com";
+// console.log(str.indexOf('http://'));
+if (str.indexOf("http://") === 0) {
+  console.log("Так");
+}
+
+// Дана строка. Проверьте, заканчивается ли эта строка на '.html'.
+let str = "www.str.html";
+let end = ".html";
+// console.log(str.length - 1 - end.length);
+
+if (str.indexOf(end) === str.length - end.length) {
+  console.log("так, закінчується");
+}
+
+// Дана строка. Проверьте, начинается ли эта строка на 'http://'.
+let str = "http://www.google.com";
+if (str.startsWith("http://")) {
+  console.log("Так");
+}
+
+// Дана строка. Проверьте, заканчивается ли эта строка на '.html'.
+let str = "www.str.html";
+if (str.endsWith(".html")) {
+  console.log("Так, закінчується");
+}
+
+// Дана строка '1-2-3-4-5'. С помощью метода split запишите каждое число этой строки в отдельный элемент массива.
+
+let str = "1-2-3-4-5";
+let arr = str.split("-");
+console.log(arr);
+
+// Дана строка '12345'. С помощью метода split запишите каждый символ этой строки в отдельный элемент массива.
+let str = "12345";
+let arr = str.split("");
+console.log(arr);
+
+// С помощью метода join слейте его в строку '1-2-3-4-5'.
+let arr = [1, 2, 3, 4, 5];
+let str = arr.join("-");
+console.log(str);
+
+// Даний масив Добавьте ему в конец элементы 4, 5, 6.
+
+let arr = [1, 2, 3];
+arr.push(4, 5, 6);
+console.log(arr);
+
+// Даний масив Добавьте ему на початок элементы 4, 5, 6.
+
+let arr = [1, 2, 3];
+arr.unshift(4, 5, 6);
+console.log(arr);
+
+// Дан следующий массив: Выведите на экран первый элемент этого массива.
+
+let arr = [1, 2, 3];
+let first = arr.shift();
+console.log(first);
+
+// Дан следующий массив: Выведите на экран останній элемент этого массива.
+
+let arr = [1, 2, 3];
+let last = arr.pop();
+console.log(last);
+
+// Дан следующий массив:
+
+// [1, 2, 3, 4, 5]
+// Сделайте из этого массива следующий:
+
+// [1, 2, 3]
+let arr = [1, 2, 3, 4, 5];
+let arr2 = arr.slice(0, 3);
+console.log(arr2);
+
+// Дан следующий массив:
+
+// [1, 2, 3, 4, 5]
+// Используя этот массив, запишите в новую переменную следующий массив:
+
+// [4, 5]
+
+let arr = [1, 2, 3, 4, 5];
+let arr2 = arr.slice(3);
+console.log(arr2);
+
+// Дан следующий массив:
+// [1, 2, 3, 4, 5]
+// С помощью метода splice преобразуйте массив в следующий:
+// [1, 4, 5]
+let arr = [1, 2, 3, 4, 5];
+arr.splice(1, 2);
+console.log(arr);
+
+// Дан следующий массив:
+// [1, 2, 3, 4, 5]
+// С помощью метода splice сделайте из него массив:
+// [1, 2, 3, 'a', 'b', 'c', 4, 5]
+let arr = [1, 2, 3, 4, 5];
+arr.splice(3, 0, "a", "b", "c");
+console.log(arr);
+
+// Дан следующий массив:
+// [1, 2, 3, 4, 5]
+// С помощью метода splice сделайте из него массив:
+// [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e']
+let arr = [1, 2, 3, 4, 5];
+arr.splice(1, 0, "a", "b");
+arr.splice(6, 0, "c");
+arr.splice(-1, 1, 5, "e");
+console.log(arr);
+
+// Дан следующий массив:
+// [1, 2, 3, 4, 5]
+// Найдите позицию числа 3 в этом массиве.
+let arr = [1, 2, 3, 4, 5];
+console.log(arr.indexOf(3));
+
+// Дан следующий массив:
+// [1, 2, 3, 4, 5]
+// Проверьте, есть ли в этом массиве число 3.
+let arr = [1, 2, 3, 4, 5];
+if (arr.includes(3)) {
+  console.log("Так");
+}
+
+// Практика
+// let str = 'london';
+
+// Преобразуйте последнюю букву строки в верхний регистр.
+let str = "london";
+str = str.slice(0, -1) + str.slice(-1).toUpperCase();
+console.log(str);
+
+// Преобразуйте первые 2 буквы строки в верхний регистр.
+let str = "london";
+str = str.slice(0, 2).toUpperCase() + str.slice(2);
+console.log(str);
+
+// Пусть дана строка, у которой первая буква в верхнем регистре, например вот такая:
+// let str = 'London';
+// Преобразуйте первую букву строки в нижний регистр.
+let str = "London";
+console.log(str.toLowerCase());
+
+// Пусть у нас есть некоторая переменная с текстом, состоящим из нескольких слов:
+// let str = 'word1 word2 word3';
+// Давайте напишем код, который преобразует первую букву каждого слова в верхний регистр.
+let str = "word1 word2 word3";
+let arr = str.split(" ");
+for (let i = 0; i < arr.length; i++) {
+  arr[i] = arr[i].slice(0, 1).toUpperCase() + arr[i].slice(1);
+}
+let result = arr.join(" ");
+console.log(result);
+
+// Преобразуйте строку 'var_test_text' в 'VarTestText'.
+// Написанный код должен работать для любых строк такого типа (то есть для строк, в которых слова разделены символов подчеркивания).
+let str = "var_test_text";
+let words = str.split("_");
+for (let i = 0; i < words.length; i++) {
+  words[i] = words[i].slice(0, 1).toUpperCase() + words[i].slice(1);
+}
+let result = words.join("");
+console.log(result);
+
+// Модифицируйте предыдущую задачу так, чтобы первая буква новой строки была в нижнем регистре.
+let str = "var_test_text";
+let str2 = str.split("_").join("");
+console.log(str2);
+
+// Дана строка со словами. Напишите скрипт, который переставит слова в строке в обратном порядке.
+let str = "Слободян Віктор Миколайович";
+str2 = str.split(" ").reverse().join(" ");
+console.log(str2);
+
+// Код должен найти сумму цифр числа:
+let num = 12345;
+let arr = String(num).split("");
+let sum = 0;
+for (let digit of arr) {
+  sum += +digit;
+}
+console.log(sum);
+
+// Код должен найти сумму цифр числа:
+let num = 12345;
+let arr = String(num).split("");
+let sum = 0;
+for (let digit of arr) {
+  sum += +digit;
+}
+console.log(sum);
+
+// Код должен найти сумму цифр числа:
+let num = 12345;
+let arr = String(num).split("");
+let sum = 0;
+for (let digit of arr) {
+  sum += Number(digit);
+}
+console.log(sum); // почему-то выводит 5, а не 15
+
+// Код должен найти сумму цифр числа:
+let num = 12345;
+let arr = String(num).split("");
+let sum = 0;
+for (let digit of arr) {
+  sum += Number(digit);
+}
+console.log(sum);
+
+// Код должен найти произведение цифр числа:
+let num = 12345;
+let arr = String(num).split("");
+let prod = 1;
+for (let digit of arr) {
+  prod *= digit;
+}
+console.log(prod);
