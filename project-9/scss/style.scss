@@ -1,0 +1,187 @@
+@import "_nullstyle";
+
+body {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.text-form {
+  border: 1px solid black;
+  &:focus {
+    border: 2px solid black;
+    box-shadow: 0px 0px 2px black;
+  }
+}
+.red {
+  border-color: red;
+  &-text {
+    color: red;
+  }
+}
+.height {
+  height: 31px;
+}
+.mb,
+p {
+  margin-bottom: 7px;
+}
+.pl {
+  padding-left: 2px;
+}
+.parea {
+  padding: 10px;
+}
+.width {
+  width: 300px;
+  &-2 {
+    width: 380px;
+  }
+  &-3 {
+    width: 200px;
+  }
+}
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.resize {
+  &-horisontal {
+    resize: horizontal;
+  }
+  &-vertical {
+    resize: vertical;
+  }
+  &-none {
+    resize: none;
+  }
+  &-min-max {
+    resize: both;
+    min-width: 100px;
+    max-width: 300px;
+    min-height: 50px;
+    max-height: 600px;
+  }
+  &-width {
+    &-3 {
+      min-width: 200px;
+      max-width: 200px;
+    }
+  }
+}
+.placeholder {
+  &-green::placeholder {
+    color: green;
+  }
+  &-green-2::placeholder {
+    color: rgb(6, 103, 76);
+  }
+}
+.btn {
+  &-wh {
+    width: 200px;
+    padding: 10px;
+  }
+}
+footer {
+  height: 20px;
+}
+:disabled {
+  background-color: rgb(196, 193, 193);
+}
+.focus {
+  border: 1px solid #000;
+  &-red:focus {
+    outline: 1px solid red;
+  }
+  &-pink:focus {
+    box-shadow: 0px 0px 5px red;
+  }
+}
+input:checked + label {
+  color: red;
+}
+
+input:disabled {
+  border: 1px solid red;
+}
+.paragraph {
+  color: rgb(255, 0, 0);
+  &-2 {
+    color: #ffeeaa;
+  }
+  &-3 {
+    background-color: #000;
+    color: #fff;
+  }
+  &-4 {
+    color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(0, 255, 0, 0.5);
+    border: 1px solid rgba(0, 0, 255, 0.5);
+  }
+  &-5 {
+    text-shadow: 10px 5px 3px rgb(255, 0, 0);
+  }
+  &-6 {
+    text-shadow: -10px -5px 0px rgb(0, 255, 0);
+  }
+  &-7 {
+    text-shadow: 15px -10px 0px;
+  }
+  &-8 {
+    text-shadow: 0px 0px 5px rgb(0, 255, 0);
+  }
+  &-9 {
+    text-shadow: 0px -10px 2px rgb(255, 0, 0), 0px 10px 2px rgb(0, 255, 0);
+  }
+  &-10 {
+    text-shadow: 2px 2px 2px;
+  }
+  &-11 {
+    text-shadow: 0px 0px 5px;
+  }
+  &-12 {
+    text-shadow: 0px 0px 3px rgb(255, 0, 0);
+  }
+  &-13 {
+    text-shadow: -5px -5px 2px rgb(100, 0, 255), 5px 5px 2px rgb(255, 0, 0);
+  }
+  &-14 {
+    text-shadow: 10px 10px 1px rgb(255, 0, 0), 20px 20px 1px rgb(100, 0, 255);
+  }
+}
+h2 {
+  color: rgb(255, 255, 0);
+}
+h3 {
+  color: rgb(0, 0, 255);
+}
+.parent {
+  background-image: url(../image/bc-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  padding: 30px;
+}
+.element {
+  &-1 {
+    width: 600px;
+    height: 200px;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border: 20px solid white;
+    background: #000;
+    opacity: 0.7;
+    margin-bottom: 10px;
+  }
+  &-2 {
+    width: 600px;
+    height: 200px;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 15px;
+    border: 20px solid rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
