@@ -234,3 +234,102 @@ input:checked + label {
 input:disabled {
   border: 1px solid red;
 }
+
+.paragraph {
+  color: red;
+}
+
+.paragraph-2 {
+  color: #ffeeaa;
+}
+
+.paragraph-3 {
+  background-color: #000;
+  color: #fff;
+}
+
+.paragraph-4 {
+  color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(0, 255, 0, 0.5);
+  border: 1px solid rgba(0, 0, 255, 0.5);
+}
+
+.paragraph-5 {
+  text-shadow: 10px 5px 3px red;
+}
+
+.paragraph-6 {
+  text-shadow: -10px -5px 0px lime;
+}
+
+.paragraph-7 {
+  text-shadow: 15px -10px 0px;
+}
+
+.paragraph-8 {
+  text-shadow: 0px 0px 5px lime;
+}
+
+.paragraph-9 {
+  text-shadow: 0px -10px 2px red, 0px 10px 2px lime;
+}
+
+.paragraph-10 {
+  text-shadow: 2px 2px 2px;
+}
+
+.paragraph-11 {
+  text-shadow: 0px 0px 5px;
+}
+
+.paragraph-12 {
+  text-shadow: 0px 0px 3px red;
+}
+
+.paragraph-13 {
+  text-shadow: -5px -5px 2px #6400ff, 5px 5px 2px red;
+}
+
+.paragraph-14 {
+  text-shadow: 10px 10px 1px red, 20px 20px 1px #6400ff;
+}
+
+h2 {
+  color: yellow;
+}
+
+h3 {
+  color: blue;
+}
+
+.parent {
+  background-image: url(../image/bc-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  padding: 30px;
+}
+
+.element-1 {
+  width: 600px;
+  height: 200px;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  border: 20px solid white;
+  background: #000;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.element-2 {
+  width: 600px;
+  height: 200px;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 15px;
+  border: 20px solid rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+}
