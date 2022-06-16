@@ -222,4 +222,307 @@ function func(arr) {
   }
   return true;
 }
-console.log(func([2, 4, 6, 8, 14, 17, 16]));
+console.log(func([2, 4, 6, 8, 14, 18, 16]));
+
+// Сделайте функцию, которая параметром будет принимать число и проверять, что все цифры это числа являются нечетными.
+function numOdd(num) {
+  numStr = String(num);
+  for (let i = 0; i < numStr.length; i++) {
+    if (Number(numStr[i]) % 2 === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(numOdd(39));
+
+// Сделайте функцию, которая параметром будет принимать массив и проверять, есть ли в этом массиве два одинаковых элемента подряд.
+function theSame(arr) {
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] == arr[i + 1]) {
+      return true;
+    }
+  }
+  return false;
+}
+console.log(theSame([1, 2, 3, 4, 5, 5, 6, 7, 8, 9, 12]));
+
+// Дана следующая функция:
+// function func(a, b) {
+// 	if (a == b) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+// Перепишите ее код в сокращенной форме согласно изученной теории.
+function func(a, b) {
+  return a == b;
+}
+console.log(func(9, 2));
+
+// Дана следующая функция:
+// function func(a, b) {
+// 	if (a != b) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+// Перепишите ее код в сокращенной форме согласно изученной теории.
+function func(a, b) {
+  return a != b;
+}
+console.log(func(1, 5));
+
+// Дана следующая функция:
+// function func(a, b) {
+// 	if (a + b >= 10) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+// Перепишите ее код в сокращенной форме согласно изученной теории.
+function func(a, b) {
+  return a + b >= 10;
+}
+console.log(func(6, 4));
+
+// Дана следующая функция:
+// function func(num) {
+// 	if (num >= 0) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+// Перепишите ее код в сокращенной форме согласно изученной теории.
+function func(num) {
+  return num >= 0;
+}
+console.log(func(1));
+
+// Код должен найти сумму результатов работы двух функций:
+function func1() {
+  return 3;
+}
+function func2() {
+  return 5;
+}
+console.log(func1() + func2());
+
+// Код должен найти сумму элементов массива:
+function sum(arr) {
+  let res = 0;
+  for (let elem of arr) {
+    res += elem;
+  }
+  return res;
+}
+
+console.log(sum([1, 2, 3, 4, 5]));
+
+// Код должен найти сумму элементов массива, однако, ничего не выводит на экран:
+let arr = [1, 2, 3, 4, 5];
+function func(arr) {
+  let res = 0;
+  for (let elem of arr) {
+    res += elem;
+  }
+  console.log(res);
+}
+func(arr);
+
+// Код должен найти сумму результатов работы двух функций:
+function func1() {
+  return 3;
+}
+function func2() {
+  return 5;
+}
+console.log(func1() + func2());
+
+// Код должен найти сумму элементов массива:
+let arr = [1, 2, 3, 4, 5];
+console.log(sum(arr));
+function sum(arr) {
+  let sum = 0;
+  for (let elem of arr) {
+    sum += elem;
+  }
+  return sum;
+}
+
+// Код должен найти сумму элементов массива:
+let res = sum([1, 2, 3, 4, 5]);
+console.log(res);
+function sum(arr) {
+  let sum = 0;
+  for (let elem of arr) {
+    sum += elem;
+  }
+  return sum;
+}
+
+// Функция добавляет ноль к числу от 1 до 9, а числа больше 9 возвращает без изменений:
+function add(num) {
+  if (num <= 9) {
+    return "0" + num;
+  } else {
+    return num;
+  }
+}
+console.log(add(10));
+
+// Код должен найти сумму элементов массива:
+let arr = [1, 2, 3, 4, 5];
+let sumres = sum(arr);
+console.log(sumres);
+function sum(arr) {
+  let res = 0;
+  for (let elem of arr) {
+    res += elem;
+  }
+  return res;
+}
+
+// Код должен найти сумму цифр числа:
+let num = 12345;
+let res = getDigitsSum(num);
+console.log(res);
+function getDigitsSum(num) {
+  let arr = String(num).split("");
+  let sum = 0;
+  for (let elem of arr) {
+    sum += +elem;
+  }
+  return sum;
+}
+
+// Дана функция, проверяющая числа на простоту:
+function isPrime(num) {
+  for (let i = 2; i < num; i++) {
+    if (num % i == 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
+// С помощью приведенной функции найдите все простые числа в интервале от 1 до 100.
+for (let i = 1; i <= 100; i++) {
+  if (isPrime(i)) {
+    console.log(i);
+  }
+}
+
+// Дана функция getDigitsSum, которая параметром принимает целое число и возвращает сумму его цифр:
+function getDigitsSum(num) {
+  let sum = 0;
+  let digits = String(num).split("");
+  for (let digit of digits) {
+    sum += Number(digit);
+  }
+  return sum;
+}
+// С помощью приведенной функции getDigitsSum найдите все года от 1 до 2030, сумма цифр которых равна 13.
+for (let i = 1; i <= 2030; i++) {
+  if (getDigitsSum(i) == 13) {
+    console.log(i);
+  }
+}
+
+// Пусть дан какой-то массив с числами, например, такой:
+// [123, 456, 789]
+// Давайте сделаем так, чтобы цифры в каждом элементе массива были в обратном порядке. То есть из нашего массива сделаем следующий:
+// [321, 654, 987]
+// Некий программист уже написал код, реализующий описанную задачу:
+// let nums = [123, 456, 789];
+// let result = [];
+// for (let num of nums) {
+// 	result.push(String(num).split('').reverse().join(''));
+// }
+// console.log(result); // выведет [321, 654, 987]
+// Переделайте приведенный код так, чтобы переворот числа выполняла отдельная функция.
+function getReverse(num) {
+  let str = String(num);
+  return str.split("").reverse().join("");
+}
+let arr = [123, 456, 789];
+let arr2 = [];
+for (let elem of arr) {
+  arr2.push(getReverse(elem));
+}
+console.log(arr2);
+
+// Даны два числа. Необходимо проверить, равна ли сумма цифр первого числа сумме цифр второго числа. Некий программист уже написал решение задачи, вот оно:
+// let num1 = 234;
+// let num2 = 531;
+// let digits1 = String(num1).split('');
+// let digitsSum1 = 0;
+// for (let digit1 of digits1) {
+// 	digitsSum1 += Number(digit1);
+// }
+// let digits2 = String(num1).split('');
+// let digitsSum2 = 0;
+// for (let digit2 of digits2) {
+// 	digitsSum2 += Number(digit2);
+// }
+// if (digitsSum1 == digitsSum2) {
+// 	alert('суммы цифр совпадают');
+// } else {
+// 	alert('суммы цифр не совпадают');
+// }
+// В чем недостатки приведенного кода? Переделайте код так, чтобы он был более удачным.
+let num1 = 134;
+let num2 = 531;
+function getDigitsSum(num) {
+  let sum = 0;
+  let arr = String(num).split("");
+  for (let elem of arr) {
+    sum += +elem;
+  }
+  return sum;
+}
+function equality(a, b) {
+  if (a == b) {
+    console.log("суми цифр співпадають");
+  } else {
+    console.log("суми цифр не співпадають");
+  }
+}
+equality(getDigitsSum(num1), getDigitsSum(num2));
+
+// Дан массив с числами. Необходимо перебрать этот массив с числами и вывести в консоль нетривиальные делители этих чисел (то есть исключая число 1 и само число). Некий программист уже написал решение задачи:
+let nums = [12, 24, 35, 14];
+for (let num of nums) {
+  console.log(num + ": " + getDivisors(num).join(", "));
+}
+function getDivisors(num) {
+  let result = [];
+  for (let i = 2; i < num; i++) {
+    if (num % i == 0) {
+      result.push(i);
+    }
+  }
+  return result;
+}
+// Программист не тестировал отдельно работу функции getDivisors, а написал весь код сразу и затем запустил его. При запуске оказалось, что код работает как-то не так. Видимо, в функции getDivisors была допущена какая-то ошибка.
+// Найдите и исправьте ошибку. Потестируйте отдельно функцию getDivisors, чтобы убедиться, что она работает корректно после вашей правки. После того, как вы убедитесь в корректности работы функции - проверьте полный код решения задачи.
+
+// Дана функция getSum, находящая сумму элементов переданного массива:
+function getSum(arr) {
+  let sum = 0;
+  for (let elem of arr) {
+    sum += Number(elem);
+  }
+  return sum;
+}
+// Дана функция getDigits, возвращающая массив цифр числа:
+function getDigits(num) {
+  return String(num).split("");
+}
+// Используя комбинацию приведенных функций найдите сумму цифр числа 12345.
+let a = 12345;
+console.log(getSum(getDigits(a)));
