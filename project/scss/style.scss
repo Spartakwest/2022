@@ -20,6 +20,8 @@ p {
 }
 .text-form {
   border: 1px solid #000;
+  width: $w;
+  height: $h;
 }
 .div {
   &-1 {
@@ -77,5 +79,45 @@ p {
     width: $w;
     height: $h;
     box-shadow: inset -5px -5px 10px red, inset 5px 5px 10px rgb(255, 0, 255);
+  }
+  &-12 {
+    width: 1000px;
+    height: 500px;
+    background-position: center;
+    background-repeat: space;
+    background-size: contain;
+    background-attachment: local;
+    background-image: url(../image/image-bg.webp);
+  }
+  &-13 {
+    width: $w;
+    height: $h;
+    background: linear-gradient(to right, red 30px, black 30px, black 60px);
+    background-size: 60px 40px;
+  }
+  &-14 {
+    background: linear-gradient(yellow, white);
+  }
+  &-15 {
+    background: linear-gradient(to right, yellow, white);
+  }
+  &-16 {
+    background: linear-gradient(to left, yellow, white);
+  }
+  &-17 {
+    background: linear-gradient(to left top, red 30px, pink 200px, white);
+  }
+  &-18 {
+    background: linear-gradient(to right, red, blue);
+  }
+  &-19 {
+    background: linear-gradient(to bottom, white 100px, red 100px);
+    background-size: 198px 198px;
+  }
+}
+.color {
+  &-1 {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
   }
 }

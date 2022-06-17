@@ -109,6 +109,8 @@ p {
 
 .text-form {
   border: 1px solid #000;
+  width: 200px;
+  height: 200px;
 }
 
 .div-1 {
@@ -186,4 +188,69 @@ p {
   height: 200px;
   -webkit-box-shadow: inset -5px -5px 10px red, inset 5px 5px 10px magenta;
           box-shadow: inset -5px -5px 10px red, inset 5px 5px 10px magenta;
+}
+
+.div-12 {
+  width: 1000px;
+  height: 500px;
+  background-position: center;
+  background-repeat: space;
+  background-size: contain;
+  background-attachment: local;
+  background-image: url(../image/image-bg.webp);
+}
+
+.div-13 {
+  width: 200px;
+  height: 200px;
+  background: -webkit-linear-gradient(left, red 30px, black 30px, black 60px);
+  background: -o-linear-gradient(left, red 30px, black 30px, black 60px);
+  background: linear-gradient(to right, red 30px, black 30px, black 60px);
+  background-size: 60px 40px;
+}
+
+.div-14 {
+  background: -webkit-gradient(linear, left top, left bottom, from(yellow), to(white));
+  background: -webkit-linear-gradient(yellow, white);
+  background: -o-linear-gradient(yellow, white);
+  background: linear-gradient(yellow, white);
+}
+
+.div-15 {
+  background: -webkit-gradient(linear, left top, right top, from(yellow), to(white));
+  background: -webkit-linear-gradient(left, yellow, white);
+  background: -o-linear-gradient(left, yellow, white);
+  background: linear-gradient(to right, yellow, white);
+}
+
+.div-16 {
+  background: -webkit-gradient(linear, right top, left top, from(yellow), to(white));
+  background: -webkit-linear-gradient(right, yellow, white);
+  background: -o-linear-gradient(right, yellow, white);
+  background: linear-gradient(to left, yellow, white);
+}
+
+.div-17 {
+  background: -webkit-linear-gradient(right bottom, red 30px, pink 200px, white);
+  background: -o-linear-gradient(right bottom, red 30px, pink 200px, white);
+  background: linear-gradient(to left top, red 30px, pink 200px, white);
+}
+
+.div-18 {
+  background: -webkit-gradient(linear, left top, right top, from(red), to(blue));
+  background: -webkit-linear-gradient(left, red, blue);
+  background: -o-linear-gradient(left, red, blue);
+  background: linear-gradient(to right, red, blue);
+}
+
+.div-19 {
+  background: -webkit-linear-gradient(top, white 100px, red 100px);
+  background: -o-linear-gradient(top, white 100px, red 100px);
+  background: linear-gradient(to bottom, white 100px, red 100px);
+  background-size: 198px 198px;
+}
+
+.color-1 {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
 }
