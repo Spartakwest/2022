@@ -526,3 +526,232 @@ function getDigits(num) {
 // Используя комбинацию приведенных функций найдите сумму цифр числа 12345.
 let a = 12345;
 console.log(getSum(getDigits(a)));
+
+// Дано число. Нужно найти его делители (без 1 и самого числа), а затем найти среднее арифметическое (сумма делить на количество) делителей числа и вывести результат на экран. Некий программист уже написал решение задачи:
+console.log(getAvg(getDivisors(24)).toFixed(1));
+// Нахождение среднего арифметического:
+function getAvg(arr) {
+  let sum = 0;
+  for (let elem of arr) {
+    sum += elem;
+  }
+  return sum / arr.length;
+}
+// Нахождение массива делителей числа:
+function getDivisors(num) {
+  let result = [];
+  for (let i = 2; i < num; i++) {
+    if (num % i == 0) {
+      result.push(i);
+    }
+  }
+  return result;
+}
+// Программист не тестировал отдельно работу своих функций, а написал весь код сразу и затем запустил его. При запуске оказалось, что код работает неверно.
+// Найдите и исправьте ошибки программиста. Потестируйте отдельно работу всех функций, чтобы убедиться, что они работают корректно после ваших правок. После того, как вы убедитесь в корректности работы функций - проверьте полный код решения задачи.
+
+/////////////////////
+//Задача 1
+let arr = [
+  11, 212, 323234, 33, 4455, 6, 67675, 56, 34, 234, 23435, 55, 66, 33, 12,
+];
+let result = [];
+// орієнтуємося на одне число, масив перебиратимемо циклом пізніше
+function inRange(num) {
+  return getSum(getDigits(num)) >= 1 && getSum(getDigits(num)) <= 9;
+}
+function getSum(arr) {
+  let sum = 0;
+  for (let elem of arr) {
+    sum += Number(elem);
+  }
+  return sum;
+}
+function getDigits(num) {
+  return String(num).split("");
+}
+for (let elem of arr) {
+  if (inRange(elem)) {
+    result.push(elem);
+  }
+}
+console.log(result);
+
+/////////////////////
+//Задача 1
+// Реализуйте функцию getOwnDivisors. Потестируйте ее работу.
+function getOwnDivisors(num) {
+  let result = [];
+  for (let i = 1; i < num; i++) {
+    if (num % i == 0) {
+      result.push(i);
+    }
+  }
+  return result;
+}
+// console.log(getOwnDivisors(15));
+
+/////////////////////
+//Задача 2
+// Реализуйте функцию getSum. Потестируйте ее работу.
+function getSum(arr) {
+  let sum = 0;
+  for (let elem of arr) {
+    sum += elem;
+  }
+  return sum;
+}
+// console.log(getSum([1,2,3]));
+
+/////////////////////
+//Задача 3
+function isFreindly(num1, num2) {
+  let sum1 = getSum(getOwnDivisors(num1));
+  let sum2 = getSum(getOwnDivisors(num2));
+
+  if (sum1 == num2 && sum2 == num1) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isFreindly(220, 284));
+
+/////////////////////
+//Задача 4
+// Сделайте функцию getFreindly, которая будет находить пары дружественных чисел в заданном промежутке и возвращать их в виде двухмерного массива вида следующего вида:
+// [ [220, 284], [1184, 1210], [2620, 2924] ]
+// С помощью созданной функции найдите все пары дружественных чисел на промежутке от 1 до 3000.
+// завдання 1
+// програмуємо із кінця
+// стфорюємо функцію, яка отримує 2 числа і видає масив із дружніми числами, які знаходяться в цьому проміжку
+function isFreindlyArray(num1, num2) {
+  let arr = [];
+  let counter = 0;
+  // треба запустити два цикли для першого числа та для другого
+  for (let i = num1; i <= num2; i++) {
+    // друге число має запускатися починаючи від першого і до грайньої границі, щоб значення не повторювалися
+    for (let j = i; j <= num2; j++) {
+      if (isFreindly(i, j)) {
+        // console.log(counter);
+        arr[counter] = [];
+        // console.log(arr);
+        arr[counter].push(i);
+        // console.log(arr);
+        arr[counter].push(j);
+        // console.log(arr);
+        counter++;
+        // console.log(counter);
+      }
+    }
+  }
+  return arr;
+}
+console.log(isFreindlyArray(1, 3000));
+// створюємо функцію, яка перевіряє чи числа дружні
+function isFreindly(num1, num2) {
+  let sum1 = sumDevisors(getDivisors(num1));
+  let sum2 = sumDevisors(getDivisors(num2));
+  return num1 == sum2 && num2 == sum1 && num1 != num2;
+}
+// console.log(isFreindly(220,284));
+// створюємо функцію яка повертатиме суму дільників
+function sumDevisors(arr) {
+  let sum = 0;
+  for (let elem of arr) {
+    sum += elem;
+  }
+  return sum;
+}
+// console.log(sumDevisors([1, 2, 3]));
+// створюємо функцію, яка повертає масив дільників
+function getDivisors(num) {
+  let arr = [];
+  for (let i = 1; i < num; i++) {
+    if (num % i == 0) {
+      arr.push(i);
+    }
+  }
+  return arr;
+}
+// console.log(getDivisors(10));
+
+/////////////////////
+//Задача 5
+// Совершенное число - целое число, равное сумме всех своих собственных делителей (то есть всех положительных делителей, отличных от самого числа). Сделайте функцию getPerfect, которая будет находить совершенные числа в заданном диапазоне. Проверьте работу функции в промежутке от 1 до 1000.
+// створюємо функцію яка в проміжку отримуватиме ідеальні числа
+function getPerfectInterval(num1, num2) {
+  let arr = [];
+  for (let i = num1; i <= num2; i++) {
+    if (getPerfect(i)) {
+      arr.push(i);
+    }
+  }
+  return arr;
+}
+function getPerfect(num) {
+  return sumDevisors(getDivisors(num)) == num;
+}
+function sumDevisors(arr) {
+  let sum = 0;
+  for (let elem of arr) {
+    sum += elem;
+  }
+  return sum;
+}
+function getDivisors(num) {
+  let arr = [];
+  for (let i = 1; i < num; i++) {
+    if (num % i == 0) {
+      arr.push(i);
+    }
+  }
+  return arr;
+}
+console.log(getPerfectInterval(1, 1000));
+
+/////////////////////
+//Задача 1
+// написати функцію, яка перевірятиме пересікання масивів
+function getInt(arr1, arr2) {
+  let result = [];
+  for (let elem of arr1) {
+    if (inArray(elem, arr2)) {
+      if (result.indexOf(elem) == -1) {
+        result.push(elem);
+      }
+    }
+  }
+  return result;
+}
+function inArray(elem, arr) {
+  return arr.indexOf(elem) !== -1;
+}
+console.log(getInt([2, 3, 3, 4, 6, 7, 7, 8], [1, 2, 3, 4, 5, 6, 7, 8, 9]));
+
+/////////////////////
+//Задача 1
+// написати функцію, яка повертає якими числами масиви різняться
+// функція повертає масив яким різняться
+function getDiff(arr1, arr2) {
+  let getDiffOne1 = getDiffOne(arr1, arr2);
+  let getDiffOne2 = getDiffOne(arr2, arr1);
+  return [].concat(getDiffOne1, getDiffOne2);
+}
+function getDiffOne(arr1, arr2) {
+  let result = [];
+  for (let elem of arr1) {
+    if (noInArray(elem, arr2)) {
+      if (result.indexOf(elem) == -1) {
+        result.push(elem);
+      }
+    }
+  }
+  return result;
+}
+function noInArray(elem, arr) {
+  return arr.indexOf(elem) == -1;
+}
+let arr1 = [1, 2, 3];
+let arr2 = [3, 4, 4, 5, 6, 7];
+console.log(getDiff(arr1, arr2));
