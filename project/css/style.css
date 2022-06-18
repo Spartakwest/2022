@@ -87,3 +87,179 @@ h6 {
 }
 
 /*-----------------------------------------*/
+body {
+  padding: 10px;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 0px auto;
+}
+
+p {
+  font-weight: 700;
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: underline;
+  margin: 20px;
+}
+
+h3 {
+  font-size: 35px;
+  color: blue;
+}
+
+footer {
+  height: 200px;
+}
+
+.text-form {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+}
+
+.div-1 {
+  background: -webkit-radial-gradient(circle closest-corner at 25% 25%, red 30px, yellow 40px, yellow 60px, green);
+  background: -o-radial-gradient(circle closest-corner at 25% 25%, red 30px, yellow 40px, yellow 60px, green);
+  background: radial-gradient(circle closest-corner at 25% 25%, red 30px, yellow 40px, yellow 60px, green);
+}
+
+.div-2 {
+  background: -webkit-radial-gradient(farthest-side, #70ddde, #2a8ab3);
+  background: -o-radial-gradient(farthest-side, #70ddde, #2a8ab3);
+  background: radial-gradient(farthest-side, #70ddde, #2a8ab3);
+}
+
+.div-3 {
+  background: -webkit-radial-gradient(top center, farthest-side, #70ddde, #2a8ab3);
+  background: -o-radial-gradient(top center, farthest-side, #70ddde, #2a8ab3);
+  background: radial-gradient(farthest-side at top center, #70ddde, #2a8ab3);
+}
+
+.div-4 {
+  background: -webkit-radial-gradient(closest-side circle, #70ddde, #2a8ab3);
+  background: -o-radial-gradient(closest-side circle, #70ddde, #2a8ab3);
+  background: radial-gradient(closest-side circle, #70ddde, #2a8ab3);
+}
+
+.div-5 {
+  background: -webkit-radial-gradient(circle closest-corner at 30px 40px, #70ddde, #2a8ab3 60px);
+  background: -o-radial-gradient(circle closest-corner at 30px 40px, #70ddde, #2a8ab3 60px);
+  background: radial-gradient(circle closest-corner at 30px 40px, #70ddde, #2a8ab3 60px);
+}
+
+.div-6 {
+  background: -webkit-radial-gradient(closest-side, #494949 10px, white 30px, white 40px, green 50px);
+  background: -o-radial-gradient(closest-side, #494949 10px, white 30px, white 40px, green 50px);
+  background: radial-gradient(closest-side, #494949 10px, white 30px, white 40px, green 50px);
+}
+
+.div-7 {
+  background: -webkit-radial-gradient(circle, green 30px, white 30px, white 50px, green 50px);
+  background: -o-radial-gradient(circle, green 30px, white 30px, white 50px, green 50px);
+  background: radial-gradient(circle, green 30px, white 30px, white 50px, green 50px);
+}
+
+.div-8 {
+  background: -webkit-repeating-linear-gradient(left, white 0px, white 5px, black 5px, black 10px);
+  background: -o-repeating-linear-gradient(left, white 0px, white 5px, black 5px, black 10px);
+  background: repeating-linear-gradient(to right, white 0px, white 5px, black 5px, black 10px);
+}
+
+.div-9 {
+  background: -webkit-repeating-linear-gradient(bottom, white 0px, white 5px, black 5px, black 10px);
+  background: -o-repeating-linear-gradient(bottom, white 0px, white 5px, black 5px, black 10px);
+  background: repeating-linear-gradient(to top, white 0px, white 5px, black 5px, black 10px);
+}
+
+.div-10 {
+  background: -webkit-repeating-linear-gradient(bottom, white, white 5px, black 5px, black 6px);
+  background: -o-repeating-linear-gradient(bottom, white, white 5px, black 5px, black 6px);
+  background: repeating-linear-gradient(to top, white, white 5px, black 5px, black 6px);
+}
+
+.div-11 {
+  background: -webkit-repeating-linear-gradient(45deg, white, white 3px, red 3px, red 6px);
+  background: -o-repeating-linear-gradient(45deg, white, white 3px, red 3px, red 6px);
+  background: repeating-linear-gradient(45deg, white, white 3px, red 3px, red 6px);
+}
+
+.div-12 {
+  background: -webkit-repeating-radial-gradient(center, circle, white, white 5px, black 5px, black 10px);
+  background: -o-repeating-radial-gradient(center, circle, white, white 5px, black 5px, black 10px);
+  background: repeating-radial-gradient(circle at center, white, white 5px, black 5px, black 10px);
+}
+
+.div-13 {
+  -webkit-transition-property: background-color, width;
+  -o-transition-property: background-color, width;
+  transition-property: background-color, width;
+  -webkit-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
+.div-13:hover {
+  background-color: red;
+  width: 50px;
+}
+
+.div-14 {
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 3s;
+       -o-transition-duration: 3s;
+          transition-duration: 3s;
+  -webkit-transition-timing-function: cubic-bezier(0.65, 1.25, 0.27, -0.64);
+       -o-transition-timing-function: cubic-bezier(0.65, 1.25, 0.27, -0.64);
+          transition-timing-function: cubic-bezier(0.65, 1.25, 0.27, -0.64);
+}
+
+.div-14:hover {
+  width: 600px;
+  background: red;
+}
+
+.div-15 {
+  border: 1px solid red;
+  width: 350px;
+  height: 100px;
+  -webkit-transition: background 2s ease 0s;
+  -o-transition: background 2s ease 0s;
+  transition: background 2s ease 0s;
+}
+
+.div-15:hover {
+  background: red;
+}
+
+.div-16 {
+  border: 1px solid red;
+  width: 350px;
+  height: 100px;
+  color: red;
+  font-size: 18px;
+  -webkit-transition: all 2s ease 0s;
+  -o-transition: all 2s ease 0s;
+  transition: all 2s ease 0s;
+}
+
+.div-16:hover {
+  background: red;
+  color: white;
+}
+
+.div-17 {
+  border: 1px solid red;
+  width: 350px;
+  height: 100px;
+  -webkit-transition: all 2s ease 0s;
+  -o-transition: all 2s ease 0s;
+  transition: all 2s ease 0s;
+}
+
+.div-17:hover {
+  width: 600px;
+}
