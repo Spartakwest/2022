@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*-----------------------------------------*/
+body {
+  padding: 20px;
+}
+
+footer {
+  height: 200px;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #0000fa;
+}
+
+p {
+  font-style: italic;
+  text-decoration: underline;
+  margin: 20px;
+}
+
+.text-form {
+  border: 1px solid #000;
+  width: 200px;
+  height: 200px;
+}
+
+.div-1 {
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: 20px 15px 5px red;
+          box-shadow: 20px 15px 5px red;
+}
+
+.div-2 {
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: 20px -15px 0px lime;
+          box-shadow: 20px -15px 0px lime;
+}
+
+.div-3 {
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: inset 0 0 5px black;
+          box-shadow: inset 0 0 5px black;
+}
+
+.div-4 {
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: inset 4px 3px 3px black;
+          box-shadow: inset 4px 3px 3px black;
+}
+
+.div-5 {
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: 1px 1px 1px red, -1px -1px 1px green;
+          box-shadow: 1px 1px 1px red, -1px -1px 1px green;
+}
+
+.div-6 {
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: 30px 0px 0px red, -30px 0px 0px blue, 0px 30px 0px green, 0px -30px 0px maroon;
+          box-shadow: 30px 0px 0px red, -30px 0px 0px blue, 0px 30px 0px green, 0px -30px 0px maroon;
+}
+
+.div-7 {
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: 20px 20px 0px black;
+          box-shadow: 20px 20px 0px black;
+}
+
+.div-8 {
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: 20px 20px 5px black;
+          box-shadow: 20px 20px 5px black;
+}
+
+.div-9 {
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: 20px 20px 5px black, -15px -15px 5px black;
+          box-shadow: 20px 20px 5px black, -15px -15px 5px black;
+}
+
+.div-10 {
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: inset 5px 5px 5px black;
+          box-shadow: inset 5px 5px 5px black;
+}
+
+.div-11 {
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: inset -5px -5px 10px red, inset 5px 5px 10px magenta;
+          box-shadow: inset -5px -5px 10px red, inset 5px 5px 10px magenta;
+}
+
+.div-12 {
+  width: 1000px;
+  height: 500px;
+  background-position: center;
+  background-repeat: space;
+  background-size: contain;
+  background-attachment: local;
+  background-image: url(../image/image-bg.webp);
+}
+
+.div-13 {
+  width: 200px;
+  height: 200px;
+  background: -webkit-linear-gradient(left, red 30px, black 30px, black 60px);
+  background: -o-linear-gradient(left, red 30px, black 30px, black 60px);
+  background: linear-gradient(to right, red 30px, black 30px, black 60px);
+  background-size: 60px 40px;
+}
+
+.div-14 {
+  background: -webkit-gradient(linear, left top, left bottom, from(yellow), to(white));
+  background: -webkit-linear-gradient(yellow, white);
+  background: -o-linear-gradient(yellow, white);
+  background: linear-gradient(yellow, white);
+}
+
+.div-15 {
+  background: -webkit-gradient(linear, left top, right top, from(yellow), to(white));
+  background: -webkit-linear-gradient(left, yellow, white);
+  background: -o-linear-gradient(left, yellow, white);
+  background: linear-gradient(to right, yellow, white);
+}
+
+.div-16 {
+  background: -webkit-gradient(linear, right top, left top, from(yellow), to(white));
+  background: -webkit-linear-gradient(right, yellow, white);
+  background: -o-linear-gradient(right, yellow, white);
+  background: linear-gradient(to left, yellow, white);
+}
+
+.div-17 {
+  background: -webkit-linear-gradient(right bottom, red 30px, pink 200px, white);
+  background: -o-linear-gradient(right bottom, red 30px, pink 200px, white);
+  background: linear-gradient(to left top, red 30px, pink 200px, white);
+}
+
+.div-18 {
+  background: -webkit-gradient(linear, left top, right top, from(red), to(blue));
+  background: -webkit-linear-gradient(left, red, blue);
+  background: -o-linear-gradient(left, red, blue);
+  background: linear-gradient(to right, red, blue);
+}
+
+.div-19 {
+  background: -webkit-linear-gradient(top, white 100px, red 100px);
+  background: -o-linear-gradient(top, white 100px, red 100px);
+  background: linear-gradient(to bottom, white 100px, red 100px);
+  background-size: 198px 198px;
+}
+
+.color-1 {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
