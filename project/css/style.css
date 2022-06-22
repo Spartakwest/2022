@@ -263,3 +263,298 @@ footer {
 .div-17:hover {
   width: 600px;
 }
+
+.div-18 {
+  border: 1px solid red;
+  width: 350px;
+  height: 100px;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.div-18:hover {
+  margin-left: 50px;
+  width: 380px;
+}
+
+.div-19 {
+  border: 1px solid red;
+  width: 350px;
+  height: 100px;
+  -webkit-transition: all 1.5s ease 2s;
+  -o-transition: all 1.5s ease 2s;
+  transition: all 1.5s ease 2s;
+}
+
+.div-19:hover {
+  width: 400px;
+}
+
+.div-20 {
+  border: 1px solid red;
+  width: 350px;
+  height: 100px;
+  -webkit-transition: all 1.5s cubic-bezier(0.18, -0.25, 0.55, 0.87) 0s;
+  -o-transition: all 1.5s cubic-bezier(0.18, -0.25, 0.55, 0.87) 0s;
+  transition: all 1.5s cubic-bezier(0.18, -0.25, 0.55, 0.87) 0s;
+}
+
+.div-20:hover {
+  width: 500px;
+}
+
+.div-22 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+}
+
+.div-23 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  border: 2px solid green;
+  width: 50px;
+  height: 50px;
+}
+
+.div-24 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  border: 2px dashed yellowgreen;
+  width: 50px;
+  height: 50px;
+}
+
+.div-25 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+          animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  border: 2px double red;
+  width: 50px;
+  height: 50px;
+}
+
+.div-26 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  border: 1px solid #000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.div-27 {
+  width: 50px;
+  height: 10px;
+  border: 1px solid red;
+  margin-left: 300px;
+}
+
+.div-27-1 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+.div-27-2 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+.div-27-3 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.div-27-4 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.div-27-5 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.div-27-6 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.div-27-7 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.div-27-8 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.text-21 {
+  border: 1px solid black;
+  padding: 5px;
+  width: 350px;
+  font-weight: 400;
+  font-family: arial;
+  margin-bottom: 10px;
+  -webkit-transition: all 1.5s ease 0s;
+  -o-transition: all 1.5s ease 0s;
+  transition: all 1.5s ease 0s;
+}
+
+.text-21:focus {
+  border: 1px solid blue;
+  color: blue;
+  width: 500px;
+}
+
+.text-22 {
+  border: 1px solid black;
+  padding: 5px;
+  width: 350px;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.text-22:focus {
+  -webkit-box-shadow: 0px 0px 5px blue;
+          box-shadow: 0px 0px 5px blue;
+  color: blue;
+}
+
+@-webkit-keyframes move {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 400px;
+  }
+}
+
+@keyframes move {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 400px;
+  }
+}

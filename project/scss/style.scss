@@ -173,4 +173,187 @@ footer {
       width: 600px;
     }
   }
+  &-18 {
+    border: 1px solid red;
+    width: 350px;
+    height: 100px;
+    transition: all 1s ease 0s;
+    &:hover {
+      margin-left: 50px;
+      width: 380px;
+    }
+  }
+  &-19 {
+    border: 1px solid red;
+    width: 350px;
+    height: 100px;
+    transition: all 1.5s ease 2s;
+    &:hover {
+      width: 400px;
+    }
+  }
+  &-20 {
+    border: 1px solid red;
+    width: 350px;
+    height: 100px;
+    transition: all 1.5s cubic-bezier(0.18, -0.25, 0.55, 0.87) 0s;
+    &:hover {
+      width: 500px;
+    }
+  }
+  &-22 {
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+  }
+  &-23 {
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    border: 2px solid green;
+    width: 50px;
+    height: 50px;
+  }
+  &-24 {
+    animation-name: move;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border: 2px dashed yellowgreen;
+    width: 50px;
+    height: 50px;
+  }
+  &-25 {
+    animation-name: move;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+    border: 2px double red;
+    width: 50px;
+    height: 50px;
+  }
+  &-26 {
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 3;
+    border: 1px solid #000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  &-27 {
+    width: 50px;
+    height: 10px;
+    border: 1px solid red;
+    margin-left: 300px;
+    &-1 {
+      animation-name: move;
+      animation-duration: 3s;
+      animation-delay: 0s;
+      animation-timing-function: linear;
+      animation-iteration-count: 3;
+      animation-fill-mode: none;
+    }
+    &-2 {
+      animation-name: move;
+      animation-duration: 3s;
+      animation-delay: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: 3;
+      animation-fill-mode: none;
+    }
+    &-3 {
+      animation-name: move;
+      animation-duration: 3s;
+      animation-delay: 0s;
+      animation-timing-function: linear;
+      animation-iteration-count: 3;
+      animation-fill-mode: backwards;
+    }
+    &-4 {
+      animation-name: move;
+      animation-duration: 3s;
+      animation-delay: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: 3;
+      animation-fill-mode: backwards;
+    }
+    &-5 {
+      animation-name: move;
+      animation-duration: 3s;
+      animation-delay: 0s;
+      animation-timing-function: linear;
+      animation-iteration-count: 3;
+      animation-fill-mode: forwards;
+    }
+    &-6 {
+      animation-name: move;
+      animation-duration: 3s;
+      animation-delay: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: 3;
+      animation-fill-mode: forwards;
+    }
+    &-7 {
+      animation-name: move;
+      animation-duration: 3s;
+      animation-delay: 0s;
+      animation-timing-function: linear;
+      animation-iteration-count: 3;
+      animation-fill-mode: both;
+    }
+    &-8 {
+      animation-name: move;
+      animation-duration: 3s;
+      animation-delay: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: 3;
+      animation-fill-mode: both;
+    }
+  }
+}
+.text {
+  &-21 {
+    border: 1px solid black;
+    padding: 5px;
+    width: 350px;
+    font-weight: 400;
+    font-family: arial;
+    margin-bottom: 10px;
+    transition: all 1.5s ease 0s;
+    &:focus {
+      border: 1px solid blue;
+      color: blue;
+      width: 500px;
+    }
+  }
+  &-22 {
+    border: 1px solid black;
+    padding: 5px;
+    width: 350px;
+    transition: all 1s ease 0s;
+    &:focus {
+      box-shadow: 0px 0px 5px blue;
+      color: blue;
+    }
+  }
+}
+@keyframes move {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 400px;
+  }
+}
+.fill-mode {
 }
