@@ -190,3 +190,124 @@ function normalizeNum(num) {
 }
 // console.log(normalizeNum(1234));
 console.log(getLuckyTickets());
+
+/////////////////////
+// Task Задача 1
+//?реалізовуємо функцію isLucky, яка прийматиме будь які номерки з парною кількістю цифр
+//todo пишемо функцію isLucky
+function isLucky(str) {
+  let arr = str.split("");
+  let len = arr.length / 2;
+  let arr1 = arr.splice(0, len);
+  let arr2 = arr;
+  let sum1 = 0;
+  let sum2 = 0;
+  for (let i = 0; i < len; i++) {
+    // console.log(arr1[i], arr2[i]);
+    sum1 += Number(arr1[i]);
+    sum2 += Number(arr2[i]);
+  }
+  return sum1 == sum2;
+}
+//todo пишемо функцію для нормалізації числа
+function numNormalize(num, digitsAmount) {
+  let str = formStr("0", digitsAmount - String(num).length) + String(num);
+  return str;
+}
+// console.log(numNormalize(520,6));
+
+/////////////////////
+// Task Задача 3
+//?написати функцію formStr
+function formStr(data, length) {
+  let str = "";
+  for (let i = 0; i < length; i++) {
+    str += data;
+  }
+  return str;
+}
+// console.log(isLucky(5203,6));
+
+/////////////////////
+// Task Задача 6
+//?Сделайте функцию getLast, которая параметром будет принимать число цифр в билете и возвращать число, соответствующее концу цикла. Потестируйте эту функцию на различных значениях.
+function getLast(numberDigits) {
+  let last = 9;
+  for (let i = 1; i < numberDigits; i++) {
+    last += 9 * 10 ** i;
+  }
+  return last;
+}
+console.log(getLast(2));
+
+/////////////////////
+// Task Задача 7
+//?Сделайте функцию getFirst, которая параметром будет принимать число цифр в билете и возвращать число, соответствующее началу цикла. Потестируйте эту функцию на различных значениях.
+function getFirst(numberDigits) {
+  return 10 ** (numberDigits / 2) + 1;
+}
+// console.log(getFirst(8));
+//todo організовуємо функцію яка повертає масив щасливих білетів із заданю кількістю цифр в номері білета
+function getLuckyTickets(numberDigits) {
+  let result = [];
+  let first = getFirst(numberDigits);
+  let last = getLast(numberDigits);
+  for (let i = first; i <= last; i++) {
+    let ticket = numNormalize(i, numberDigits);
+    if (isLucky(ticket)) {
+      result.push(ticket);
+    }
+  }
+  return result;
+}
+console.log(getLuckyTickets(6));
+
+/////////////////////
+// Task Задача 1
+//?Код должен проверить число на то, что оно является простым:
+console.log(isPrime(18)); // должен вывести true
+function isPrime(num) {
+  for (let i = 2; i < num; i++) {
+    if (num % i !== 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+
+/////////////////////
+// Task Задача 2
+//?Код должен проверить пару чисел на то, что они дружественные числа:
+let res = isFriendly(220, 284);
+console.log(res); // должен вывести true
+function isFriendly(num1, num2) {
+  let sum1 = getSum(getOwnDivisors(num1));
+  let sum2 = getSum(getOwnDivisors(num2));
+  if (sum1 == num2 && sum2 == num1) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function getOwnDivisors(num) {
+  let res = [];
+  for (let i = 1; i < num; i++) {
+    // console.log(i);
+    if (num % i == 0) {
+      // console.log('!');
+      res.push(i);
+    }
+  }
+  return res;
+}
+// console.log(getOwnDivisors(15));
+function getSum(arr) {
+  let sum = 0;
+  for (let elem of arr) {
+    sum += elem;
+  }
+  return sum;
+}
+// console.log(getSum([1,2,3]));
