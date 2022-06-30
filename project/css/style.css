@@ -508,6 +508,419 @@ footer {
           animation-fill-mode: both;
 }
 
+.div-28 {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+}
+
+.div-28-1 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+.div-28-2 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  animation-direction: reverse;
+}
+
+.div-28-3 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.div-28-4 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3.55s;
+          animation-duration: 3.55s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  animation-direction: alternate-reverse;
+}
+
+.div-29 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+.div-30 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  -webkit-animation-name: color;
+          animation-name: color;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+.div-31 {
+  width: 75px;
+  height: 75px;
+  border: 1px solid red;
+  -webkit-animation-name: "move-2";
+          animation-name: "move-2";
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+.div-32 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+  -webkit-animation-name: square, "color-red";
+          animation-name: square, "color-red";
+  -webkit-animation-duration: 5s, 2s;
+          animation-duration: 5s, 2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-direction: normal, alternate;
+          animation-direction: normal, alternate;
+}
+
+.div-33 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.div-34 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+}
+
+.div-34:hover {
+  -webkit-animation: wid 2s 0s ease infinite none alternate;
+          animation: wid 2s 0s ease infinite none alternate;
+}
+
+.div-35-1 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid green;
+  margin: 0 0 20px 0;
+}
+
+.div-35-1:hover + .div-35-2 {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.div-35-2 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+  -webkit-animation: widex 3s 0s linear infinite none alternate;
+          animation: widex 3s 0s linear infinite none alternate;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.div-36 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid red;
+  position: relative;
+}
+
+.div-36-1 {
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  position: relative;
+  -webkit-animation: bounce 10s 0s ease-out infinite none normal running;
+          animation: bounce 10s 0s ease-out infinite none normal running;
+}
+
+.div-37 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid red;
+  position: relative;
+}
+
+.div-37-1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: green;
+  position: absolute;
+  -webkit-animation: "bounce-2" 5s infinite;
+          animation: "bounce-2" 5s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    top: 0px;
+    right: 100%;
+    bottom: 100%;
+    left: 0px;
+  }
+  15% {
+    top: 92%;
+    right: 85%;
+    bottom: 8%;
+    left: 15%;
+  }
+  30% {
+    top: 70%;
+    right: 80%;
+    bottom: 30%;
+    left: 20%;
+  }
+  45% {
+    top: 92%;
+    right: 75%;
+    bottom: 8%;
+    left: 25%;
+  }
+  60% {
+    top: 75%;
+    right: 70%;
+    bottom: 25%;
+    left: 30%;
+  }
+  75% {
+    top: 92%;
+    right: 60%;
+    bottom: 8%;
+    left: 40%;
+  }
+  90% {
+    top: 75%;
+    right: 55%;
+    bottom: 25%;
+    left: 45%;
+  }
+  100% {
+    top: 92%;
+    right: 50%;
+    bottom: 8%;
+    left: 50%;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 0px;
+    right: 100%;
+    bottom: 100%;
+    left: 0px;
+  }
+  15% {
+    top: 92%;
+    right: 85%;
+    bottom: 8%;
+    left: 15%;
+  }
+  30% {
+    top: 70%;
+    right: 80%;
+    bottom: 30%;
+    left: 20%;
+  }
+  45% {
+    top: 92%;
+    right: 75%;
+    bottom: 8%;
+    left: 25%;
+  }
+  60% {
+    top: 75%;
+    right: 70%;
+    bottom: 25%;
+    left: 30%;
+  }
+  75% {
+    top: 92%;
+    right: 60%;
+    bottom: 8%;
+    left: 40%;
+  }
+  90% {
+    top: 75%;
+    right: 55%;
+    bottom: 25%;
+    left: 45%;
+  }
+  100% {
+    top: 92%;
+    right: 50%;
+    bottom: 8%;
+    left: 50%;
+  }
+}
+
+@-webkit-keyframes widex {
+  from {
+    width: 50px;
+  }
+  to {
+    width: 400px;
+  }
+}
+
+@keyframes widex {
+  from {
+    width: 50px;
+  }
+  to {
+    width: 400px;
+  }
+}
+
+@-webkit-keyframes square {
+  0% {
+    margin: 0 0 0 0;
+  }
+  25% {
+    margin: 400px 0 0 0;
+  }
+  50% {
+    margin: 400px 0 0 400px;
+  }
+  75% {
+    margin: 0 0 0 400px;
+  }
+  100% {
+    margin: 0 0 0 0;
+  }
+}
+
+@keyframes square {
+  0% {
+    margin: 0 0 0 0;
+  }
+  25% {
+    margin: 400px 0 0 0;
+  }
+  50% {
+    margin: 400px 0 0 400px;
+  }
+  75% {
+    margin: 0 0 0 400px;
+  }
+  100% {
+    margin: 0 0 0 0;
+  }
+}
+
+@-webkit-keyframes color-red {
+  from {
+    background: white;
+  }
+  to {
+    background: red;
+  }
+}
+
+@keyframes color-red {
+  from {
+    background: white;
+  }
+  to {
+    background: red;
+  }
+}
+
 .text-21 {
   border: 1px solid black;
   padding: 5px;
@@ -556,5 +969,145 @@ footer {
   }
   to {
     margin-left: 400px;
+  }
+}
+
+@-webkit-keyframes color {
+  from {
+    background: white;
+  }
+  to {
+    background: red;
+  }
+}
+
+@keyframes color {
+  from {
+    background: white;
+  }
+  to {
+    background: red;
+  }
+}
+
+@-webkit-keyframes move-2 {
+  0% {
+    margin-top: 400px;
+  }
+  25% {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  50% {
+    margin-top: 0px;
+    margin-left: 400px;
+  }
+  75% {
+    margin-top: 400px;
+    margin-left: 400px;
+  }
+  100% {
+    margin-top: 400px;
+  }
+}
+
+@keyframes move-2 {
+  0% {
+    margin-top: 400px;
+  }
+  25% {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  50% {
+    margin-top: 0px;
+    margin-left: 400px;
+  }
+  75% {
+    margin-top: 400px;
+    margin-left: 400px;
+  }
+  100% {
+    margin-top: 400px;
+  }
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #000;
+}
+
+@-webkit-keyframes bounce-2 {
+  40%,
+  70%,
+  90% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    bottom: 0px;
+  }
+  0% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    left: 0px;
+    bottom: 230px;
+  }
+  55% {
+    bottom: 40px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  80% {
+    bottom: 30px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  95% {
+    bottom: 10px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    left: 110px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    bottom: 0px;
+  }
+}
+
+@keyframes bounce-2 {
+  40%,
+  70%,
+  90% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    bottom: 0px;
+  }
+  0% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    left: 0px;
+    bottom: 230px;
+  }
+  55% {
+    bottom: 40px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  80% {
+    bottom: 30px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  95% {
+    bottom: 10px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    left: 110px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    bottom: 0px;
   }
 }

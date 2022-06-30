@@ -320,6 +320,244 @@ footer {
       animation-fill-mode: both;
     }
   }
+  &-28 {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    &-1 {
+      animation-name: move;
+      animation-duration: 3s;
+      animation-delay: 0s;
+      animation-timing-function: linear;
+      animation-iteration-count: 3;
+      animation-fill-mode: none;
+      animation-direction: normal;
+    }
+    &-2 {
+      animation-name: move;
+      animation-duration: 3s;
+      animation-delay: 0s;
+      animation-timing-function: linear;
+      animation-iteration-count: 3;
+      animation-fill-mode: none;
+      animation-direction: reverse;
+    }
+    &-3 {
+      animation-name: move;
+      animation-duration: 3s;
+      animation-delay: 0s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-fill-mode: none;
+      animation-direction: alternate;
+    }
+    &-4 {
+      animation-name: move;
+      animation-duration: 3.55s;
+      animation-delay: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-fill-mode: none;
+      animation-direction: alternate-reverse;
+    }
+  }
+  &-29 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-direction: normal;
+  }
+  &-30 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    animation-name: color;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-direction: normal;
+  }
+  &-31 {
+    width: 75px;
+    height: 75px;
+    border: 1px solid red;
+    animation-name: "move-2";
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-direction: normal;
+  }
+  &-32 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    animation-name: square, "color-red";
+    animation-duration: 5s, 2s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-direction: normal, alternate;
+  }
+  &-33 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-direction: alternate;
+  }
+  &-34 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    &:hover {
+      animation: wid 2s 0s ease infinite none alternate;
+    }
+  }
+  &-35 {
+    &-1 {
+      width: 50px;
+      height: 50px;
+      border: 1px solid green;
+      margin: 0 0 20px 0;
+    }
+    &-1:hover + .div-35-2 {
+      animation-play-state: running;
+    }
+    &-2 {
+      width: 50px;
+      height: 50px;
+      border: 1px solid red;
+      animation: widex 3s 0s linear infinite none alternate;
+      animation-play-state: paused;
+    }
+  }
+  &-36 {
+    width: 250px;
+    height: 250px;
+    border: 1px solid red;
+    position: relative;
+    &-1 {
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50%;
+      position: relative;
+      animation: bounce 10s 0s ease-out infinite none normal running;
+    }
+  }
+  &-37 {
+    width: 250px;
+    height: 250px;
+    border: 1px solid red;
+    position: relative;
+    &-1 {
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      background: green;
+      position: absolute;
+      animation: "bounce-2" 5s infinite;
+    }
+  }
+}
+@keyframes bounce {
+  0% {
+    top: 0px;
+    right: 100%;
+    bottom: 100%;
+    left: 0px;
+  }
+  15% {
+    top: 92%;
+    right: 85%;
+    bottom: 8%;
+    left: 15%;
+  }
+  30% {
+    top: 70%;
+    right: 80%;
+    bottom: 30%;
+    left: 20%;
+  }
+  45% {
+    top: 92%;
+    right: 75%;
+    bottom: 8%;
+    left: 25%;
+  }
+  60% {
+    top: 75%;
+    right: 70%;
+    bottom: 25%;
+    left: 30%;
+  }
+  75% {
+    top: 92%;
+    right: 60%;
+    bottom: 8%;
+    left: 40%;
+  }
+  90% {
+    top: 75%;
+    right: 55%;
+    bottom: 25%;
+    left: 45%;
+  }
+  100% {
+    top: 92%;
+    right: 50%;
+    bottom: 8%;
+    left: 50%;
+  }
+}
+@keyframes widex {
+  from {
+    width: 50px;
+  }
+  to {
+    width: 400px;
+  }
+}
+@keyframes square {
+  0% {
+    margin: 0 0 0 0;
+  }
+  25% {
+    margin: 400px 0 0 0;
+  }
+  50% {
+    margin: 400px 0 0 400px;
+  }
+  75% {
+    margin: 0 0 0 400px;
+  }
+  100% {
+    margin: 0 0 0 0;
+  }
+}
+@keyframes color-red {
+  from {
+    background: white;
+  }
+  to {
+    background: red;
+  }
 }
 .text {
   &-21 {
@@ -355,5 +593,66 @@ footer {
     margin-left: 400px;
   }
 }
-.fill-mode {
+@keyframes color {
+  from {
+    background: white;
+  }
+  to {
+    background: red;
+  }
+}
+@keyframes move-2 {
+  0% {
+    margin-top: 400px;
+  }
+  25% {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  50% {
+    margin-top: 0px;
+    margin-left: 400px;
+  }
+  75% {
+    margin-top: 400px;
+    margin-left: 400px;
+  }
+  100% {
+    margin-top: 400px;
+  }
+}
+.box {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #000;
+}
+@keyframes bounce-2 {
+  40%,
+  70%,
+  90% {
+    animation-timing-function: ease-out;
+    bottom: 0px;
+  }
+  0% {
+    animation-timing-function: ease-in;
+    left: 0px;
+    bottom: 230px;
+  }
+  55% {
+    bottom: 40px;
+    animation-timing-function: ease-in;
+  }
+  80% {
+    bottom: 30px;
+    animation-timing-function: ease-in;
+  }
+  95% {
+    bottom: 10px;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    left: 110px;
+    animation-timing-function: ease-out;
+    bottom: 0px;
+  }
 }
