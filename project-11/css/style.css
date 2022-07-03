@@ -1,0 +1,1113 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*-----------------------------------------*/
+body {
+  padding: 10px;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 0px auto;
+}
+
+p {
+  font-weight: 700;
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: underline;
+  margin: 20px;
+}
+
+h3 {
+  font-size: 35px;
+  color: blue;
+}
+
+footer {
+  height: 200px;
+}
+
+.text-form {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+}
+
+.div-1 {
+  background: -webkit-radial-gradient(circle closest-corner at 25% 25%, red 30px, yellow 40px, yellow 60px, green);
+  background: -o-radial-gradient(circle closest-corner at 25% 25%, red 30px, yellow 40px, yellow 60px, green);
+  background: radial-gradient(circle closest-corner at 25% 25%, red 30px, yellow 40px, yellow 60px, green);
+}
+
+.div-2 {
+  background: -webkit-radial-gradient(farthest-side, #70ddde, #2a8ab3);
+  background: -o-radial-gradient(farthest-side, #70ddde, #2a8ab3);
+  background: radial-gradient(farthest-side, #70ddde, #2a8ab3);
+}
+
+.div-3 {
+  background: -webkit-radial-gradient(top center, farthest-side, #70ddde, #2a8ab3);
+  background: -o-radial-gradient(top center, farthest-side, #70ddde, #2a8ab3);
+  background: radial-gradient(farthest-side at top center, #70ddde, #2a8ab3);
+}
+
+.div-4 {
+  background: -webkit-radial-gradient(closest-side circle, #70ddde, #2a8ab3);
+  background: -o-radial-gradient(closest-side circle, #70ddde, #2a8ab3);
+  background: radial-gradient(closest-side circle, #70ddde, #2a8ab3);
+}
+
+.div-5 {
+  background: -webkit-radial-gradient(circle closest-corner at 30px 40px, #70ddde, #2a8ab3 60px);
+  background: -o-radial-gradient(circle closest-corner at 30px 40px, #70ddde, #2a8ab3 60px);
+  background: radial-gradient(circle closest-corner at 30px 40px, #70ddde, #2a8ab3 60px);
+}
+
+.div-6 {
+  background: -webkit-radial-gradient(closest-side, #494949 10px, white 30px, white 40px, green 50px);
+  background: -o-radial-gradient(closest-side, #494949 10px, white 30px, white 40px, green 50px);
+  background: radial-gradient(closest-side, #494949 10px, white 30px, white 40px, green 50px);
+}
+
+.div-7 {
+  background: -webkit-radial-gradient(circle, green 30px, white 30px, white 50px, green 50px);
+  background: -o-radial-gradient(circle, green 30px, white 30px, white 50px, green 50px);
+  background: radial-gradient(circle, green 30px, white 30px, white 50px, green 50px);
+}
+
+.div-8 {
+  background: -webkit-repeating-linear-gradient(left, white 0px, white 5px, black 5px, black 10px);
+  background: -o-repeating-linear-gradient(left, white 0px, white 5px, black 5px, black 10px);
+  background: repeating-linear-gradient(to right, white 0px, white 5px, black 5px, black 10px);
+}
+
+.div-9 {
+  background: -webkit-repeating-linear-gradient(bottom, white 0px, white 5px, black 5px, black 10px);
+  background: -o-repeating-linear-gradient(bottom, white 0px, white 5px, black 5px, black 10px);
+  background: repeating-linear-gradient(to top, white 0px, white 5px, black 5px, black 10px);
+}
+
+.div-10 {
+  background: -webkit-repeating-linear-gradient(bottom, white, white 5px, black 5px, black 6px);
+  background: -o-repeating-linear-gradient(bottom, white, white 5px, black 5px, black 6px);
+  background: repeating-linear-gradient(to top, white, white 5px, black 5px, black 6px);
+}
+
+.div-11 {
+  background: -webkit-repeating-linear-gradient(45deg, white, white 3px, red 3px, red 6px);
+  background: -o-repeating-linear-gradient(45deg, white, white 3px, red 3px, red 6px);
+  background: repeating-linear-gradient(45deg, white, white 3px, red 3px, red 6px);
+}
+
+.div-12 {
+  background: -webkit-repeating-radial-gradient(center, circle, white, white 5px, black 5px, black 10px);
+  background: -o-repeating-radial-gradient(center, circle, white, white 5px, black 5px, black 10px);
+  background: repeating-radial-gradient(circle at center, white, white 5px, black 5px, black 10px);
+}
+
+.div-13 {
+  -webkit-transition-property: background-color, width;
+  -o-transition-property: background-color, width;
+  transition-property: background-color, width;
+  -webkit-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
+.div-13:hover {
+  background-color: red;
+  width: 50px;
+}
+
+.div-14 {
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 3s;
+       -o-transition-duration: 3s;
+          transition-duration: 3s;
+  -webkit-transition-timing-function: cubic-bezier(0.65, 1.25, 0.27, -0.64);
+       -o-transition-timing-function: cubic-bezier(0.65, 1.25, 0.27, -0.64);
+          transition-timing-function: cubic-bezier(0.65, 1.25, 0.27, -0.64);
+}
+
+.div-14:hover {
+  width: 600px;
+  background: red;
+}
+
+.div-15 {
+  border: 1px solid red;
+  width: 350px;
+  height: 100px;
+  -webkit-transition: background 2s ease 0s;
+  -o-transition: background 2s ease 0s;
+  transition: background 2s ease 0s;
+}
+
+.div-15:hover {
+  background: red;
+}
+
+.div-16 {
+  border: 1px solid red;
+  width: 350px;
+  height: 100px;
+  color: red;
+  font-size: 18px;
+  -webkit-transition: all 2s ease 0s;
+  -o-transition: all 2s ease 0s;
+  transition: all 2s ease 0s;
+}
+
+.div-16:hover {
+  background: red;
+  color: white;
+}
+
+.div-17 {
+  border: 1px solid red;
+  width: 350px;
+  height: 100px;
+  -webkit-transition: all 2s ease 0s;
+  -o-transition: all 2s ease 0s;
+  transition: all 2s ease 0s;
+}
+
+.div-17:hover {
+  width: 600px;
+}
+
+.div-18 {
+  border: 1px solid red;
+  width: 350px;
+  height: 100px;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.div-18:hover {
+  margin-left: 50px;
+  width: 380px;
+}
+
+.div-19 {
+  border: 1px solid red;
+  width: 350px;
+  height: 100px;
+  -webkit-transition: all 1.5s ease 2s;
+  -o-transition: all 1.5s ease 2s;
+  transition: all 1.5s ease 2s;
+}
+
+.div-19:hover {
+  width: 400px;
+}
+
+.div-20 {
+  border: 1px solid red;
+  width: 350px;
+  height: 100px;
+  -webkit-transition: all 1.5s cubic-bezier(0.18, -0.25, 0.55, 0.87) 0s;
+  -o-transition: all 1.5s cubic-bezier(0.18, -0.25, 0.55, 0.87) 0s;
+  transition: all 1.5s cubic-bezier(0.18, -0.25, 0.55, 0.87) 0s;
+}
+
+.div-20:hover {
+  width: 500px;
+}
+
+.div-22 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+}
+
+.div-23 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  border: 2px solid green;
+  width: 50px;
+  height: 50px;
+}
+
+.div-24 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  border: 2px dashed yellowgreen;
+  width: 50px;
+  height: 50px;
+}
+
+.div-25 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+          animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  border: 2px double red;
+  width: 50px;
+  height: 50px;
+}
+
+.div-26 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  border: 1px solid #000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.div-27 {
+  width: 50px;
+  height: 10px;
+  border: 1px solid red;
+  margin-left: 300px;
+}
+
+.div-27-1 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+.div-27-2 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+.div-27-3 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.div-27-4 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.div-27-5 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.div-27-6 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.div-27-7 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.div-27-8 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.div-28 {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+}
+
+.div-28-1 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+.div-28-2 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  animation-direction: reverse;
+}
+
+.div-28-3 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.div-28-4 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3.55s;
+          animation-duration: 3.55s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  animation-direction: alternate-reverse;
+}
+
+.div-29 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+.div-30 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  -webkit-animation-name: color;
+          animation-name: color;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+.div-31 {
+  width: 75px;
+  height: 75px;
+  border: 1px solid red;
+  -webkit-animation-name: "move-2";
+          animation-name: "move-2";
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+.div-32 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+  -webkit-animation-name: square, "color-red";
+          animation-name: square, "color-red";
+  -webkit-animation-duration: 5s, 2s;
+          animation-duration: 5s, 2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-direction: normal, alternate;
+          animation-direction: normal, alternate;
+}
+
+.div-33 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.div-34 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+}
+
+.div-34:hover {
+  -webkit-animation: wid 2s 0s ease infinite none alternate;
+          animation: wid 2s 0s ease infinite none alternate;
+}
+
+.div-35-1 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid green;
+  margin: 0 0 20px 0;
+}
+
+.div-35-1:hover + .div-35-2 {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.div-35-2 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+  -webkit-animation: widex 3s 0s linear infinite none alternate;
+          animation: widex 3s 0s linear infinite none alternate;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.div-36 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid red;
+  position: relative;
+}
+
+.div-36-1 {
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  position: relative;
+  -webkit-animation: bounce 10s 0s ease-out infinite none normal running;
+          animation: bounce 10s 0s ease-out infinite none normal running;
+}
+
+.div-37 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid red;
+  position: relative;
+}
+
+.div-37-1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: green;
+  position: absolute;
+  -webkit-animation: "bounce-2" 5s infinite;
+          animation: "bounce-2" 5s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    top: 0px;
+    right: 100%;
+    bottom: 100%;
+    left: 0px;
+  }
+  15% {
+    top: 92%;
+    right: 85%;
+    bottom: 8%;
+    left: 15%;
+  }
+  30% {
+    top: 70%;
+    right: 80%;
+    bottom: 30%;
+    left: 20%;
+  }
+  45% {
+    top: 92%;
+    right: 75%;
+    bottom: 8%;
+    left: 25%;
+  }
+  60% {
+    top: 75%;
+    right: 70%;
+    bottom: 25%;
+    left: 30%;
+  }
+  75% {
+    top: 92%;
+    right: 60%;
+    bottom: 8%;
+    left: 40%;
+  }
+  90% {
+    top: 75%;
+    right: 55%;
+    bottom: 25%;
+    left: 45%;
+  }
+  100% {
+    top: 92%;
+    right: 50%;
+    bottom: 8%;
+    left: 50%;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 0px;
+    right: 100%;
+    bottom: 100%;
+    left: 0px;
+  }
+  15% {
+    top: 92%;
+    right: 85%;
+    bottom: 8%;
+    left: 15%;
+  }
+  30% {
+    top: 70%;
+    right: 80%;
+    bottom: 30%;
+    left: 20%;
+  }
+  45% {
+    top: 92%;
+    right: 75%;
+    bottom: 8%;
+    left: 25%;
+  }
+  60% {
+    top: 75%;
+    right: 70%;
+    bottom: 25%;
+    left: 30%;
+  }
+  75% {
+    top: 92%;
+    right: 60%;
+    bottom: 8%;
+    left: 40%;
+  }
+  90% {
+    top: 75%;
+    right: 55%;
+    bottom: 25%;
+    left: 45%;
+  }
+  100% {
+    top: 92%;
+    right: 50%;
+    bottom: 8%;
+    left: 50%;
+  }
+}
+
+@-webkit-keyframes widex {
+  from {
+    width: 50px;
+  }
+  to {
+    width: 400px;
+  }
+}
+
+@keyframes widex {
+  from {
+    width: 50px;
+  }
+  to {
+    width: 400px;
+  }
+}
+
+@-webkit-keyframes square {
+  0% {
+    margin: 0 0 0 0;
+  }
+  25% {
+    margin: 400px 0 0 0;
+  }
+  50% {
+    margin: 400px 0 0 400px;
+  }
+  75% {
+    margin: 0 0 0 400px;
+  }
+  100% {
+    margin: 0 0 0 0;
+  }
+}
+
+@keyframes square {
+  0% {
+    margin: 0 0 0 0;
+  }
+  25% {
+    margin: 400px 0 0 0;
+  }
+  50% {
+    margin: 400px 0 0 400px;
+  }
+  75% {
+    margin: 0 0 0 400px;
+  }
+  100% {
+    margin: 0 0 0 0;
+  }
+}
+
+@-webkit-keyframes color-red {
+  from {
+    background: white;
+  }
+  to {
+    background: red;
+  }
+}
+
+@keyframes color-red {
+  from {
+    background: white;
+  }
+  to {
+    background: red;
+  }
+}
+
+.text-21 {
+  border: 1px solid black;
+  padding: 5px;
+  width: 350px;
+  font-weight: 400;
+  font-family: arial;
+  margin-bottom: 10px;
+  -webkit-transition: all 1.5s ease 0s;
+  -o-transition: all 1.5s ease 0s;
+  transition: all 1.5s ease 0s;
+}
+
+.text-21:focus {
+  border: 1px solid blue;
+  color: blue;
+  width: 500px;
+}
+
+.text-22 {
+  border: 1px solid black;
+  padding: 5px;
+  width: 350px;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.text-22:focus {
+  -webkit-box-shadow: 0px 0px 5px blue;
+          box-shadow: 0px 0px 5px blue;
+  color: blue;
+}
+
+@-webkit-keyframes move {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 400px;
+  }
+}
+
+@keyframes move {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 400px;
+  }
+}
+
+@-webkit-keyframes color {
+  from {
+    background: white;
+  }
+  to {
+    background: red;
+  }
+}
+
+@keyframes color {
+  from {
+    background: white;
+  }
+  to {
+    background: red;
+  }
+}
+
+@-webkit-keyframes move-2 {
+  0% {
+    margin-top: 400px;
+  }
+  25% {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  50% {
+    margin-top: 0px;
+    margin-left: 400px;
+  }
+  75% {
+    margin-top: 400px;
+    margin-left: 400px;
+  }
+  100% {
+    margin-top: 400px;
+  }
+}
+
+@keyframes move-2 {
+  0% {
+    margin-top: 400px;
+  }
+  25% {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  50% {
+    margin-top: 0px;
+    margin-left: 400px;
+  }
+  75% {
+    margin-top: 400px;
+    margin-left: 400px;
+  }
+  100% {
+    margin-top: 400px;
+  }
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #000;
+}
+
+@-webkit-keyframes bounce-2 {
+  40%,
+  70%,
+  90% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    bottom: 0px;
+  }
+  0% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    left: 0px;
+    bottom: 230px;
+  }
+  55% {
+    bottom: 40px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  80% {
+    bottom: 30px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  95% {
+    bottom: 10px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    left: 110px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    bottom: 0px;
+  }
+}
+
+@keyframes bounce-2 {
+  40%,
+  70%,
+  90% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    bottom: 0px;
+  }
+  0% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    left: 0px;
+    bottom: 230px;
+  }
+  55% {
+    bottom: 40px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  80% {
+    bottom: 30px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  95% {
+    bottom: 10px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    left: 110px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    bottom: 0px;
+  }
+}
