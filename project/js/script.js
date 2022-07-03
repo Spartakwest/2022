@@ -311,3 +311,199 @@ function getSum(arr) {
   return sum;
 }
 // console.log(getSum([1,2,3]));
+
+/////////////////////
+// Task Задача 1
+//?
+let num = 1;
+function func() {
+  console.log(num);
+}
+func();
+
+let num = 1;
+function func() {
+  console.log(num);
+}
+num = 2;
+func();
+//////////////The separator/////////////
+function func() {
+  console.log(num);
+}
+let num;
+num = 1;
+func();
+num = 2;
+func();
+//////////////The separator/////////////
+function func() {
+  let num = 5;
+  return num;
+}
+console.log(num);
+//////////////The separator/////////////
+function func() {
+  let num = 5;
+  return num;
+}
+console.log(func());
+//////////////The separator/////////////
+let num = 1;
+function func() {
+  num = 2;
+}
+func();
+console.log(num);
+//////////////The separator/////////////
+let num = 1;
+function func() {
+  let num = 2;
+}
+func();
+console.log(num);
+//////////////The separator/////////////
+let num = 1;
+function func() {
+  num = 2;
+}
+func();
+// console.log();
+console.log(num);
+//////////////The separator/////////////
+let num = 1;
+function func() {
+  num = 2;
+}
+console.log(num);
+//////////////The separator/////////////
+let num = 1;
+function func() {
+  let num = 2;
+}
+func();
+console.log(num);
+//////////////The separator/////////////
+let num = 1;
+function func() {
+  let num = 2;
+}
+console.log(num);
+func();
+//////////////The separator/////////////
+let num = 1;
+function func() {
+  num = 2;
+}
+console.log(num);
+func();
+//1
+//////////////The separator/////////////
+let num = 1;
+function func() {
+  num++;
+}
+func();
+func();
+func();
+console.log(num);
+//4
+//////////////The separator/////////////
+function func() {
+  num = 2;
+}
+let num = 1;
+console.log(num);
+func();
+//////////////The separator/////////////
+function func() {
+  num = 2;
+}
+let num = 1;
+func();
+console.log(num);
+
+/////////////////////
+// Task Задача 2
+//?
+function func(localNum) {
+  console.log(localNum);
+}
+func(1);
+//////////////The separator/////////////
+function func(localNum) {
+  console.log(localNum);
+}
+let num = 1;
+func(num);
+//////////////The separator/////////////
+function func(localNum) {
+  console.log(localNum);
+}
+
+let num = 1;
+func(num);
+num = 2;
+//////////////The separator/////////////
+let num = 1;
+
+function func(localNum) {
+  console.log(localNum);
+}
+
+num = 2;
+func(num);
+//////////////The separator/////////////
+function func(localNum) {
+  localNum = 2;
+}
+
+let num = 1;
+func(num);
+console.log(num);
+//////////////The separator/////////////
+function func(localNum) {
+  num = 2;
+}
+
+let num = 1;
+func(num);
+console.log(num);
+//////////////The separator/////////////
+function func(localNum) {
+  let num = 2;
+}
+let num = 1;
+func(num);
+console.log(num);
+//////////////The separator/////////////
+function func(num) {
+  num = 2;
+}
+
+let num = 1;
+func(num);
+console.log(num);
+//////////////The separator/////////////
+function func() {
+  num = 2;
+}
+
+let num = 1;
+func();
+console.log(num);
+//////////////The separator/////////////
+function func() {
+  let num = 2;
+}
+
+let num = 1;
+func();
+console.log(num);
+//////////////The separator/////////////
+function func() {
+  return '!';
+}
+
+console.log(func);
+
