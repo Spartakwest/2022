@@ -530,3 +530,439 @@ function test() {
 let num = 2;
 let func = test();
 console.log(func());
+
+/////////////////////
+// Task Задача 1
+//?Самостоятельно, не подсматривая в мой код, реализуйте счетчик вызова функции, работающий на замыканиях.
+function test() {
+  let counter = 0;
+  return function () {
+    console.log(counter++);
+  }
+}
+let inc = test();
+inc();
+inc();
+inc();
+inc();
+
+/////////////////////
+// Task Задача 2
+//?Пусть функция в замыкании хранит число 10. Сделайте так, чтобы каждый вызов функции уменьшал это число на 1 и выводил на экран уменьшенное число.
+function test() {
+  let a = 10;
+  return function () {
+    return a--;
+  }
+}
+let func = test();
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+
+/////////////////////
+// Task Задача 3
+//?Модифицируйте предыдущую задачу так, чтобы отсчет доходил до 0, а затем каждый последующий вызов функции выводил на экран сообщение о том, что отсчет окончен.
+function test() {
+  let a = 10;
+  return function () {
+    if (a >= 0) {
+      return a--;
+    } else {
+      return 'Відлік завершено!';
+    }
+  }
+}
+let func = test();
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+
+/////////////////////
+// Task Задача 4
+//?
+function func() {
+  let num = 0;
+
+  return function () {
+    console.log(num);
+    num++;
+  };
+};
+
+func()();//0
+func()();//0
+func()();//0
+
+/////////////////////
+// Task Задача 5
+//?
+function func() {
+  let num = 0;
+
+  return function () {
+    console.log(num);
+    num++;
+  };
+};
+
+let test = func;
+
+test()();//0
+test()();//0
+test()();//0
+
+/////////////////////
+// Task Задача 6
+//?
+let counter = 0;
+
+function test() {
+  return function () {
+    console.log(counter);
+    counter++;
+  };
+};
+
+let func = test;
+
+let func1 = func();
+let func2 = func();
+func1();//0
+func2();//1
+func1();//2
+func2();//3
+
+/////////////////////
+// Task Задача 7
+//?
+function test() {
+  let counter = 0;
+
+  return function () {
+    return function () {
+      console.log(counter);
+      counter++;
+    };
+  };
+};
+
+let func = test()();
+
+let func1 = func;
+let func2 = func;
+func1();//0
+func2();//1
+func1();//2
+func2();//3
+
+/////////////////////
+// Task Задача 8
+//?
+function test() {
+  let counter = 0;
+
+  return function () {
+    return function () {
+      console.log(counter);
+      counter++;
+    };
+  };
+};
+
+let func = test();
+
+let func1 = func();
+let func2 = func();
+func1();//0
+func2();//1
+func1();//2
+func2();//3
+
+/////////////////////
+// Task Задача 1
+//?
+!function () {
+  console.log('!');
+}();
+//////////////The separator/////////////
+let result = function () {
+  return '!';
+}();
+
+console.log(result);
+//////////////The separator/////////////
+let result = function () { return 1; }() + function () { return 2; }();
+console.log(result);
+//////////////The separator/////////////
+let result = (function () {
+  return '!';
+});
+
+console.log(result);
+
+/////////////////////
+// Task Задача 12
+//?Допишите следующий код так, чтобы его запуск алертом выводил '!':
+(function () {
+  return function () {
+    return function () {
+      console.log('!')
+    }
+  }// какой-то код
+})()()();
+
+/////////////////////
+// Task Задача 13
+//?Допишите следующий код так, чтобы его запуск выводил сумму переданных параметрами чисел:
+(function (num1) {
+  return function (num2) {
+    console.log(num1 + num2);
+  }
+})(1)(2);
+/////////////////////
+// Task Задача 14
+//?Допишите следующий код так, чтобы его запуск выводил сумму переданных параметрами чисел:
+(function (num1) {
+  return function (num2) {
+    return function (num3) {
+      console.log(num1 + num2 + num3);
+    }
+  }
+})(1)(2)(3);
+//////////////The separator/////////////
+let str = 'str';
+
+(function () {
+  console.log(1);
+})();
+//////////////The separator/////////////
+let str = 'str'
+
+  (function () {
+    console.log(1);
+  })();
+/////////////////////
+// Task Задача 1
+//?Не подсматривая в мой код, самостоятельно реализуйте такой же счетчик.
+let func = (function () {
+  let num = 1;
+  return function () {
+    return num++;
+  }
+})();
+console.log(func());
+console.log(func());
+console.log(func());
+/////////////////////
+// Task Задача 2
+//?Модифицируйте работу счетчика так, чтобы он считал до 5, а потом отсчет начинался сначала.
+let func = (function () {
+  let num = 0;
+  return function () {
+    num++;
+    if (num < 6) {
+      return num;
+    } else {
+      num = 1;
+      return num;
+    }
+  }
+})();
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+
+/////////////////////
+// Task Задача 1
+//?Дан массив с числами. С помощью созданной нами функции each увеличьте каждый элемент в два раза.
+let array = [1, 2, 3, 4, 5];
+function each(arr, func) {
+  let result = [];
+  for (let elem of arr) {
+    result.push(func(elem))
+  }
+  return result;
+}
+function doubling(num) {
+  return num * 2;
+}
+console.log(each(array, doubling));
+
+/////////////////////
+// Task Задача 2
+//?Дан массив со строками. С помощью созданной нами функции each переверните символы каждой строки в обратном порядке.
+let arrayStr = ['Alegoria', 'Victor', 'Tetiana'];
+function reverse(str) {
+  return str.split('').reverse().join('');
+}
+console.log(each(arrayStr, reverse));
+
+/////////////////////
+// Task Задача 3
+//?Дан массив со строками. С помощью созданной нами функции each сделайте заглавным первый символ каждой строки.
+console.log(each(['slobodian', 'victor', 'mykolaiovych'], function (str) {
+  return str.slice(0, 1).toUpperCase() + str.slice(1)
+}));
+function cube(num) {
+  return num ** 3;
+}
+console.log(each(array, cube));
+
+/////////////////////
+// Task Задача 1
+//?Дана следующая функция с коллбэком:
+// let result = every([1, 2, 3, 4, 5], function(elem) {
+// 	if (elem > 0) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// });
+// Упростите коллбэк через стрелочную функцию.
+let result = every([1, 2, 3, 4, 5], elem => elem > 0);
+/////////////////////
+// Task Задача 2
+//?Дана следующая функция с коллбэком:
+// let result = every([1, 2, 3, 4, 5], function(elem, 
+// 	index) { 
+// 	if (elem * index > 10) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// });
+// Упростите коллбэк через стрелочную функцию.
+let result = every([1, 2, 3, 4, 5], (elem, index) => elem * index > 10);
+
+/////////////////////
+// Task Задача 3
+//?Дана следующая функция с коллбэком:
+
+// let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+// let result = each(arr, function(elem, index) {
+// 	if (elem * index > 10) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// });
+// Упростите коллбэк через стрелочную функцию.
+let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+let result = each(arr, (elem, index) => elem * index > 10);
+function each(arr, func) {
+  for (let elem of arr) {
+    let sum = 0;
+    for (let i = 0; i < elem.length; i++) {
+      sum += elem[i];
+      console.log();
+    }
+    console.log(func(sum));
+  }
+}
+result;
+//////////////The separator/////////////
+function test() {
+  let num = 1;
+  return function () {
+    return num++;
+  }
+}
+let func = test();
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+//////////////The separator/////////////
+let func = (function () {
+  let num = 1;
+  return function () {
+    return num++;
+  }
+})();
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+//////////////The separator/////////////
+let func = (() => {
+  let num = 1;
+  return () => num++
+})();
+console.log(func());
+console.log(func());
+console.log(func());
+console.log(func());
+/////////////////////
+// Task Задача 1
+//?let arr = [1, 2, 3, 4, 5];
+// С помощью рекурсии выведите элементы этого массива на экран.
+function func(arr) {
+  console.log(arr.shift());
+  if (arr.length != 0) {
+    func(arr);
+  }
+}
+let array = [1, 2, 3, 4, 5];
+func(array);
+/////////////////////
+// Task Задача 2
+//?Дан массив:
+// let arr = [1, 2, 3, 4, 5];
+// С помощью рекурсии найдите сумму квадратов элементов этого массива.
+let arr = [1, 2, 3, 4, 5];
+function getSumSquare(array) {
+  let sum = array.shift() ** 2;
+  if (array.length != 0) {
+    sum += getSumSquare(array);
+  }
+  return sum;
+}
+console.log(getSumSquare(arr));
+
+/////////////////////
+// Task Задача 1
+//?{a: 1, b: {c: 2, d: 3, e: 4}, f: {g: 5, j: 6, k: {l: 7, m: {n: 8, o: 9}}}}
+let object = { a: 1, b: { c: 2, d: 3, e: 4 }, f: { g: 5, j: 6, k: { l: 7, m: { n: 8, o: 9 } } } };
+function func(obj) {
+  for (let key in obj) {
+    if (typeof obj[key] == 'object') {
+      func(obj[key]);
+    } else {
+      console.log(obj[key]);
+    }
+  }
+}
+func(object);
+/////////////////////
+// Task Задача 2
+//?Дан многомерный массив произвольного уровня вложенности, например, такой:
+
+// [1, [2, 7, 8], [3, 4, [5, [6, 7]]]]
+// Напишите код, который развернет наш многомерный массив в одномерный. Для приведенного выше массива это будет выглядеть вот так:
+
+// [1, 2, 7, 8, 3, 4, 5, 6, 7]
