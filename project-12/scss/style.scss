@@ -1,0 +1,14 @@
+@import "_nullstyle";
+
+input {
+  border: 1px solid black;
+}
+.toCrossOut {
+  text-decoration: line-through;
+}
+.bolded {
+  font-weight: 700;
+}
+.colored {
+  color: red;
+}
