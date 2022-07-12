@@ -163,6 +163,7 @@ h6 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  outline: none;
 }
 
 .btn:active {
