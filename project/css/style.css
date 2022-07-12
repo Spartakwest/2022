@@ -159,10 +159,15 @@ h6 {
   background-color: #474747;
   border-radius: 20px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .btn:active {
-  background-color: #fff;
+  -webkit-filter: contrast(50%) brightness(200%);
+          filter: contrast(50%) brightness(200%);
 }
 
 .btn--zero {

@@ -52,7 +52,7 @@ $a: "8.05";
 }
 .btn {
   &:active {
-    background-color: #fff;
+    filter: contrast(50%) brightness(200%);
   }
   margin: 4.025px;
   width: 42px;
@@ -61,6 +61,7 @@ $a: "8.05";
   background-color: rgb(71, 71, 71);
   border-radius: 20px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  user-select: none;
   &--zero {
     width: 90.75px;
     text-align: left;
