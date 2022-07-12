@@ -171,6 +171,8 @@ h6 {
 .btn:active {
   -webkit-filter: contrast(50%) brightness(200%);
           filter: contrast(50%) brightness(200%);
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn--zero {
