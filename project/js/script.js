@@ -17,6 +17,8 @@ let change = document.querySelector('#change')
 // знаходимо дорівнює
 let dor = document.querySelector('#dor')
 
+
+
 // об'являємо змінні та масиви
 let num1 = '';
 let num2 = '';
@@ -44,7 +46,7 @@ function limitation(num) {
   if (num.length <= 9) {
     return num;
   } else {
-    return num.split('').splice(0, 9).join('')
+    return String(num).split('').splice(0, 9).join('');
   }
 }
 
@@ -59,7 +61,7 @@ for (let elem of btnNumbers) {
       displayDigit.textContent = formatter.format(limitation(num1));
     } else if (arr2.length === 1) {
       num2 += elem.textContent;
-      displayDigit.textContent = limitation(num2);
+      displayDigit.textContent = formatter.format(limitation(num2));
     }
   })
 }
@@ -90,7 +92,7 @@ for (let elem of btnOrange) {
       } else if (arr2[0] == '/') {
         result = arr1[0] / arr1[1];
       }
-      displayDigit.textContent = result;
+      displayDigit.textContent = formatter.format(result);
       arr1[0] = result;
       num2 = '';
       arr1.pop();
@@ -105,7 +107,7 @@ for (let elem of btnOrange) {
 // слухаємо дорівнює
 dor.addEventListener('click', function () {
   if (num1 != '' && arr1.length === 0) {
-    displayDigit.textContent = limitation(num1);
+    displayDigit.textContent = formatter.format(limitation(num1));
     // alert('=1')
   } else if (num2 != '' && arr2.length == 1) {
     arr1.push(Number(num2));
@@ -119,14 +121,11 @@ dor.addEventListener('click', function () {
     } else if (arr2[0] == '/') {
       result = arr1[0] / arr1[1];
     }
-    displayDigit.textContent = result;
+    displayDigit.textContent = formatter.format(result);
     num1 = result;
     num2 = '';
     arr1 = [];
     arr2.shift();
     // console.log(num1, num2, arr1, arr2);
   }
-})
-displayDigit.addEventListener('change', () => {
-  alert('Змфі')
 })
