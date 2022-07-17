@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*-----------------------------------------*/
+@media (max-width: 767px) {
+  .calculator {
+    width: 100vw;
+    height: 100vh;
+  }
+  .display {
+    width: 82vw;
+  }
+  .display-digit {
+    font-size: 15vw;
+  }
+  .buttons {
+    width: 95.5vw;
+  }
+  .btn {
+    font-size: 7.3vw;
+    width: 19vw;
+    height: 19vw;
+    margin: 1.8vw;
+  }
+  .btn--zero {
+    width: 41.25vw;
+    padding-left: 6.8vw;
+  }
+}
+
+@media (min-width: 767px) {
+  .calculator {
+    width: 220px;
+    height: 375px;
+  }
+  .display {
+    width: 180px;
+    height: 100px;
+  }
+  .display-digit {
+    font-size: 33px;
+  }
+  .buttons {
+    width: 210px;
+  }
+  .btn {
+    width: 42px;
+    height: 42px;
+    margin: 4.025px;
+  }
+  .btn--zero {
+    width: 90.75px;
+    padding-left: 15px;
+  }
+}
+
+.calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #000;
+  margin: 0px auto;
+}
+
+.display {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0 auto 20px;
+}
+
+.display-digit {
+  color: #fff;
+  display: inline-block;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+}
+
+.buttons-block1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
+}
+
+.buttons-block2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+.btn {
+  color: #fff;
+  background-color: #474747;
+  border-radius: 50%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:active {
+  -webkit-filter: contrast(50%) brightness(200%);
+          filter: contrast(50%) brightness(200%);
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn--zero {
+  border-radius: 20.625vw;
+  text-align: left;
+}
+
+.btn--gray {
+  background-color: #c7c7c7;
+  color: black;
+}
+
+.btn--orange, .btn--orange1 {
+  background-color: #ffb01f;
+}
