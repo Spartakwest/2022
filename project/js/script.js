@@ -92,7 +92,12 @@ for (let elem of btnOrange) {
       } else if (arr2[0] == '/') {
         result = arr1[0] / arr1[1];
       }
-      displayDigit.textContent = formatter.format(result);
+      if (String(formatter.format(result)).length < 11) {
+        displayDigit.textContent = formatter.format(result);
+      } else {
+        displayDigit.textContent = 'неможливо відобразити'
+      }
+
       arr1[0] = result;
       num2 = '';
       arr1.pop();
@@ -121,11 +126,58 @@ dor.addEventListener('click', function () {
     } else if (arr2[0] == '/') {
       result = arr1[0] / arr1[1];
     }
-    displayDigit.textContent = formatter.format(result);
+    if (String(formatter.format(result)).length < 11) {
+      displayDigit.textContent = formatter.format(result);
+    } else {
+      displayDigit.textContent = 'неможливо відобразити'
+    }
     num1 = result;
     num2 = '';
     arr1 = [];
     arr2.shift();
     // console.log(num1, num2, arr1, arr2);
+  }
+})
+
+// відстежуємо кому
+coma.addEventListener('click', function addComa() {
+  if (num1 != '' && num2 == '') {
+    if (num1.indexOf('.') == -1) {
+      num1 += '.';
+    }
+    if (num2 == '') {
+      if (num2.indexOf('.') == -1) {
+        num2 = 0 + '.';
+      }
+    }
+  } else if (num1 != '' && num2 != '') {
+    if (num2.indexOf('.') == -1) {
+      num2 += '.';
+    }
+  } else if (num1 == '') {
+    if (num1.indexOf('.') == -1) {
+      num1 = 0 + '.';
+    }
+  }
+})
+
+// відстежуємо знак зміни знаків
+change.addEventListener('click', () => {
+  if (num1 != "" && num2 == '') {
+    num1 = -num1;
+    displayDigit.textContent = formatter.format(limitation(num1));
+  } else if (num1 != "" && num2 != '') {
+    num2 = -num2;
+    displayDigit.textContent = formatter.format(limitation(num2));
+  }
+})
+
+interest.addEventListener('click', () => {
+  if (num1 != '' && num2 == '') {
+    num1 = Number(num1) / 100;
+    displayDigit.textContent = formatter.format(limitation(num1));
+  } else if (num1 != '' && num2 != '') {
+    num2 = Number(num2) * Number(num1) / 100;
+    displayDigit.textContent = formatter.format(limitation(num2));
   }
 })
