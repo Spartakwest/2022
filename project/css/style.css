@@ -97,3 +97,9 @@ table,
 td {
   border: 1px solid black;
 }
+.div9,
+.div19 td {
+  min-width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
