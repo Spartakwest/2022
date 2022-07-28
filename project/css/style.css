@@ -90,16 +90,39 @@ h6 {
 input {
   border: 1px solid black;
 }
-.div7 p {
-  color: green;
+
+div {
+  border: 1px solid red;
 }
-table,
+
+.underline {
+  text-decoration: line-through;
+}
+
 td {
   border: 1px solid black;
 }
-.div9,
-.div19 td {
-  min-width: 50px;
-  height: 50px;
-  border: 1px solid black;
+
+.green {
+  background-color: green;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  color: red;
+}
+
+.color1 {
+  color: red;
+}
+
+.color2 {
+  color: green;
+}
+
+.cross {
+  text-decoration: line-through;
 }
