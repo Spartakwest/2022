@@ -87,3 +87,7 @@ h6 {
 }
 
 /*-----------------------------------------*/
+input,
+textarea {
+  border: 1px solid black;
+}
