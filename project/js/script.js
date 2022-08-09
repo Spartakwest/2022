@@ -67,7 +67,6 @@
   }
 })();
 
-console.log(calculator1.areaSquare(6));
 
 
 
@@ -299,21 +298,115 @@ console.log(calculator1.areaSquare(6));
 /////////////////////
 // Task Задача 1
 //?Дан textarea. Пусть в него вводится текст. Сделайте так, чтобы по потери фокуса под текстареа вывелось сообщение о том, сколько в этом тексте слов.
+
+/////////////////////
+// Task Задача 2
+//?Модифицируйте предыдущую задачу так, чтобы также вывелось сообщение о том, сколько в тексте символов.
+
+/////////////////////
+// Task Задача 3
+//?Модифицируйте предыдущую задачу так, чтобы также вывелось сообщение о том, сколько в тексте символов за вычетом пробелов.
+
+/////////////////////
+// Task Задача 4
+//?Модифицируйте предыдущую задачу так, чтобы также вывелось сообщение о процентном содержании каждого символа в тексте.
+
+/////////////////////
+// Task Задача 5
+//?В предыдущих задачах мы сделали так, что для нашего текста выводятся 4 параметра. Сделайте 4 чекбокса, которые будут регулировать, какие именно параметры показывать.
+
 ; (function (separator) {
   let div = document.querySelector(separator);
   let area = div.querySelector('#textarea')
   let p1 = div.querySelector('#p1');
   let p2 = div.querySelector('#p2');
   let p3 = div.querySelector('#p3');
+  let p4 = div.querySelector('#p4');
+  let check1 = div.querySelector('#check1');
+  let check2 = div.querySelector('#check2');
+  let check3 = div.querySelector('#check3');
+  let check4 = div.querySelector('#check4');
+  let btn = div.querySelector('#btn');
 
-  area.addEventListener('blur', function () {
-    p1.textContent = 'у тексті ' + area.value.length + ' сим.';
-    p2.textContent = 'у тексті ' + area.value.split(' ').length + 'слів';
-    p3.textContent = 'без пробілів ' + area.value.split(' ').join('').length + 'сим.'
+
+  btn.addEventListener('click', function () {
+    // визаначення значення вписаного в поле як лінійку
+    let str = area.value;
+
+
+    if (check1.checked) {
+      p1.textContent = 'у тексті ' + str.length + ' сим.';
+    } else {
+      p1.style.display = 'none';
+    }
+
+    if (check2.checked) {
+      p2.textContent = 'у тексті ' + str.split(' ').length + ' сл.';
+    } else {
+      p2.style.display = 'none';
+    }
+
+    if (check3.checked) {
+      p3.textContent = 'без пробілів ' + str.split(' ').join('').length + 'сим.';
+      p4.textContent = 'відсоткове співвідношення кожного символа:';
+    } else {
+      p3.style.display = 'none';
+    }
+
+    if (check4.checked) {
+      p4.style.display = 'none';
+      let obj = percentageRatio(str);
+      let ul = document.createElement('ul');
+      for (let key in obj) {
+        let li = document.createElement('li');
+        li.textContent = `'${key}' - ${obj[key]}%`;
+        ul.appendChild(li)
+      }
+      p4.appendChild(ul);
+    }
+    else {
+      p4.style.display = 'none';
+    }
   })
 
+  // функція для визначення процентного співвідношення кожного символа
+  function percentageRatio(str) {
+    let full = str.length;
+    let obj = counter(str);
+    for (let key in obj) {
+      obj[key] = (Number(obj[key]) / Number(full) * 100).toFixed(2)
+    }
+    return obj;
+  }
 
+  // функція для визначення кількості одного символа 
+  function symbolCounter(symbol, arr) {
+    let counter = 0;
+    return (function () {
+      while (arr.indexOf(symbol) != -1) {
+        counter += 1;
+        arr.splice(arr.indexOf(symbol), 1)
+      }
+      return counter;
+    })()
+  };
 
-
+  // функція для створення об'єкта із кількістю елементів лінійки
+  function counter(str) {
+    let arr = str.split('');
+    let arr2 = [];
+    let arr3 = [];
+    while (arr.length != 0) {
+      let symbol = arr[0];
+      let count = symbolCounter(symbol, arr);
+      arr2.push(symbol);
+      arr3.push(count)
+    }
+    let obj = [];
+    for (let i = 0; i < arr2.length; i++) {
+      obj[arr2[i]] = arr3[i];
+    }
+    return obj;
+  };
 
 })('.div7');
