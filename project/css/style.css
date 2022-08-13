@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -90,4 +91,77 @@ h6 {
 input,
 textarea {
   border: 1px solid black;
+}
+
+body {
+  padding: 10px;
+}
+
+#header {
+  display: block;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  width: 200px;
+  font-family: "Rubik Dirt", cursive;
+  font-size: 25px;
+  text-align: center;
+  margin: 5px auto;
+}
+
+.div1 {
+  width: 600px;
+  margin: 0 auto;
+}
+.div1 #inp {
+  background-color: rgb(129, 56, 56);
+  color: white;
+  font-family: "Rubik Dirt", cursive;
+  text-align: center;
+  display: block;
+  width: 200px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px auto;
+}
+.div1 #inp:focus {
+  -webkit-box-shadow: 0px 0px 5px black;
+          box-shadow: 0px 0px 5px black;
+}
+.div1 .result {
+  font-size: 25px;
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+label {
+  background-color: blue;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  width: 200px;
+  display: block;
+  margin: 0px auto;
+  font-size: 15px;
+}
+
+#btn {
+  display: block;
+  margin: 10px auto;
+  border: none;
+  background-color: rgb(68, 35, 15);
+  -webkit-box-shadow: 2px 2px 2px rgb(38, 20, 8);
+          box-shadow: 2px 2px 2px rgb(38, 20, 8);
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+}
+#btn:active {
+  -webkit-transform: translateY(2px);
+      -ms-transform: translateY(2px);
+          transform: translateY(2px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
