@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -88,30 +89,63 @@ h6 {
 
 /*-----------------------------------------*/
 .wrapper {
-  width: 600px;
-  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-h1 {
-  font-size: 40px;
+
+.header {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 10%;
+          flex: 0 1 10%;
+  font-size: 35px;
   text-align: center;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  background-color: yellow;
-  opacity: 0.7;
+  font-family: "DynaPuff", cursive;
+  color: #4568bc;
+  margin-bottom: 10px;
 }
-.links {
-  border: 1px solid black;
-  border-radius: 0px 0px 5px 5px;
-  height: 100px;
-}
-h2 {
-  font-size: 30px;
-  text-align: center;
-  color: blue;
+.header .header-span {
+  color: #fab148;
   text-decoration: underline;
-  margin-bottom: 20px;
 }
-a {
-  background-color: rgba(40, 58, 145, 0.259);
-  display: block;
+
+h2 {
+  font-family: "DynaPuff", cursive;
+  text-decoration: underline;
+  font-size: 20px;
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.links {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 90%;
+          flex: 1 1 90%;
+  border: 1px solid red;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "DynaPuff", cursive;
+  color: #4568bc;
+  background-color: #f57051;
+}
+
+.link {
+  margin: 5px;
 }

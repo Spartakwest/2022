@@ -1,4 +1,51 @@
 @import "_nullstyle";
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap");
 
+// color palette 623
+$color1: #ff9d8a;
+$color2: #4568bc;
+$color3: #a5bc48;
+$color4: #fab148;
+$color5: #f57051;
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  flex: 0 1 10%;
+  font-size: 35px;
+  text-align: center;
+  font-family: "DynaPuff", cursive;
+  color: $color2;
+  margin-bottom: 10px;
+  .header-span {
+    color: $color4;
+    text-decoration: underline;
+  }
+}
+h2 {
+  font-family: "DynaPuff", cursive;
+  text-decoration: underline;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.links {
+  justify-content: space-between;
+  flex: 1 1 90%;
+  border: 1px solid red;
+  flex-direction: column;
+  align-items: center;
+}
+a {
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "DynaPuff", cursive;
+  color: $color2;
+  background-color: $color5;
+}
 
+.link {
+  margin: 5px;
+}
