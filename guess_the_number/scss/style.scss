@@ -1,0 +1,85 @@
+@import "_nullstyle";
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+
+.div1 {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  #header {
+    width: 97%;
+    flex: 1 1 35%;
+    background-color: #2c51a2;
+    box-shadow: 0px 0px 10px 5px rgb(0, 0, 0);
+    margin: 15px auto;
+    color: white;
+    border-radius: 5px;
+    font-family: "Rubik Dirt", cursive;
+    font-size: 6rem;
+    text-align: center;
+  }
+  #inp {
+    &::placeholder {
+      word-wrap: break-word;
+      font-size: 1.7rem;
+      color: white;
+    }
+    margin: 10px 0px;
+    width: 97%;
+    font-size: 6rem;
+    flex: 1 1 35%;
+    background-color: #2c51a2;
+    color: white;
+    font-family: "Rubik Dirt", cursive;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    &:focus {
+      box-shadow: 0px 0px 10px 5px black;
+    }
+  }
+  #div-btn {
+    flex: 1 1 30%;
+  }
+}
+
+#btn {
+  margin: 0 auto;
+  display: block;
+  width: 15rem;
+  height: 15rem;
+  font-size: 3rem;
+  border-radius: 50%;
+  background-color: #f6b139;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  color: white;
+  &:active {
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 1180px) {
+  .div1 {
+    width: 50%;
+    #header {
+      width: 47%;
+      font-size: 5rem;
+    }
+    #inp {
+      &::placeholder {
+        word-wrap: break-word;
+        font-size: 1.6vw;
+      }
+      width: 47%;
+      font-size: 6rem;
+    }
+  }
+  #btn {
+    font-size: 3rem;
+    width: 15rem;
+    height: 15rem;
+  }
+}
