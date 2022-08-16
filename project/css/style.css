@@ -87,3 +87,31 @@ h6 {
 }
 
 /*-----------------------------------------*/
+.wrapper {
+  width: 600px;
+  margin: 0px auto;
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: yellow;
+  opacity: 0.7;
+}
+.links {
+  border: 1px solid black;
+  border-radius: 0px 0px 5px 5px;
+  height: 100px;
+}
+h2 {
+  font-size: 30px;
+  text-align: center;
+  color: blue;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+a {
+  background-color: rgba(40, 58, 145, 0.259);
+  display: block;
+  text-align: center;
+}
