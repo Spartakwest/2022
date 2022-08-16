@@ -29,11 +29,11 @@
       inp.value = '';
       a = '';
     } else if (inp.value < a && inp.value >= 1) {
-      inp.placeholder = 'введіть більше число(>>>)';
+      inp.placeholder = 'введіть більше число >>>';
       inp.style.backgroundColor = '#f55c44';
       inp.value = '';
     } else if (inp.value > a && inp.value <= 100) {
-      inp.placeholder = 'введіть менше число(<<<)';
+      inp.placeholder = 'введіть менше число <<<';
       inp.style.backgroundColor = '#f55c44';
       inp.value = '';
     } else if (inp.value > 100 || inp.value < 1) {
