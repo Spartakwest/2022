@@ -170,3 +170,19 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  color: #fab148;
+  background-color: #4568bc;
+  height: 40px;
+}
