@@ -24,7 +24,9 @@ body {
 }
 .header {
   font-size: 30px;
+  line-height: 40px;
   font-family: "DynaPuff", cursive;
+  border-bottom: 2px solid $color5;
   color: $color2;
   margin: 0 0 10px 5px;
   .header-span {
@@ -42,8 +44,9 @@ body {
   flex-wrap: nowrap;
 }
 .item {
-  margin-bottom: 10px;
-  border: 1px solid $color3;
+  margin: 3px;
+  border: 3px solid $color5;
+  box-shadow: 0px 0px 10px black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,8 +54,10 @@ body {
   border-radius: 5px;
   width: 350px;
   &-header {
+    text-decoration: underline;
+    text-decoration-color: $color2;
     font-size: 25px;
-    color: $color4;
+    color: $color5;
   }
   &-image {
     margin: 20px;
@@ -62,17 +67,17 @@ body {
   }
   &-link {
     display: inline-block;
-    border: 1px solid $color3;
+    border: 1px solid $color5;
     border-radius: 5px;
     &:hover {
-      background-color: $color3;
+      background-color: $color5;
       a {
         color: white;
       }
     }
     a {
       margin: 0 15px;
-      color: $color3;
+      color: $color5;
       line-height: 40px;
       font-size: 20px;
     }
