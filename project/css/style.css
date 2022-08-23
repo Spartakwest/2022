@@ -93,6 +93,16 @@ body {
   height: 100%;
 }
 
+button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
 .div1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,35 +115,102 @@ body {
 }
 
 #header {
+  text-align: center;
+  line-height: 400%;
+  font-family: "Rubik Dirt", cursive;
+  color: #4568bc;
+  font-size: 13vw;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
 }
 
-#inp {
-  border: 1px solid #000;
+.display {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.display #inp {
+  padding: 10px;
+  margin: 0px 2.5px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 85%;
+          flex: 1 1 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
+  font-family: "Rubik Dirt", cursive;
+  color: #4568bc;
+  font-size: 12vw;
+  border-radius: 5px;
+}
+.display .clear {
+  margin: 0px 2.5px;
+  color: #fab148;
+  border: 1px solid #fab148;
+  font-size: 12vw;
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
+  background-color: transparent;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 15%;
+          flex: 0 1 15%;
+  border-radius: 5px;
+}
+.display .clear:active {
+  color: white;
+  background-color: #fab148;
 }
 
-.btn {
+.btn,
+.btn-2 {
+  color: #f57051;
+  font-family: "Rubik Dirt", cursive;
+  background-color: transparent;
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
+  font-size: 240%;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 25%;
           flex: 1 1 25%;
-  border: 1px solid green;
+  border: 1px solid #f57051;
   margin: 10px;
   border-radius: 5px;
 }
+.btn:active,
+.btn-2:active {
+  color: white;
+  background-color: #f57051;
+}
 
 .buttons {
+  font-family: "Rubik Dirt", cursive;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 5px solid red;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
+}
+
+#btn-check {
+  border: 1px solid #fab148;
+  color: #fab148;
+}
+#btn-check:active {
+  color: white;
+  background-color: #fab148;
 }
