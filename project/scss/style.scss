@@ -93,3 +93,22 @@ button {
   border: 1px solid $color4;
   color: $color4;
 }
+@media (min-width: 768px) {
+  .div1 {
+    margin: 0 auto;
+    max-width: 250px;
+    max-height: 350px;
+  }
+  #header {
+    line-height: 150%;
+    font-size: 2rem;
+  }
+  .display {
+    #inp {
+      font-size: 15px;
+    }
+    .clear {
+      font-size: 15px;
+    }
+  }
+}

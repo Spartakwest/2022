@@ -15,7 +15,7 @@
 
   for (let btn of btns) {
     btn.addEventListener('click', function () {
-      inp.style.fontSize = '25vw';
+      inp.style.fontSize = '5rem';
       if ((b >= 1 && b <= 100) || b == '') {
         b += btn.value;
         inp.textContent = b;
@@ -39,7 +39,7 @@
     if (b == a) {
       inp.style.backgroundColor = '#a5bc48';
       inp.style.color = 'white';
-      inp.style.fontSize = '12vw';
+      inp.style.fontSize = '2rem';
       inp.textContent = 'Ви вгадали';
       b = '';
       a = '';
@@ -47,19 +47,19 @@
       inp.textContent = 'введіть більше число >>>';
       inp.style.backgroundColor = '#4568bc';
       inp.style.color = 'white';
-      inp.style.fontSize = '12vw';
+      inp.style.fontSize = '2rem';
       b = '';
     } else if (b > a && b <= 100) {
       inp.textContent = 'введіть менше число <<<';
       inp.style.backgroundColor = '#4568bc';
       inp.style.color = 'white';
-      inp.style.fontSize = '12vw';
+      inp.style.fontSize = '2rem';
       b = '';
     } else if (b > 100 || b < 1) {
       inp.textContent = 'Ой нє, ти шось не то ввів';
       inp.style.backgroundColor = '#f57051';
       inp.style.color = 'white';
-      inp.style.fontSize = '12vw';
+      inp.style.fontSize = '2rem';
       b = '';
     }
   })
@@ -68,7 +68,7 @@
     b = '';
     inp.textContent = 'Введіть число від 1 до 100';
     inp.style.backgroundColor = 'white';
-    inp.style.fontSize = '12vw';
+    inp.style.fontSize = '2rem';
     inp.style.color = '#4568bc';
   })
 
