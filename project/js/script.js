@@ -18,7 +18,7 @@
   console.log(arr);
 
   for (let number of arr) {
-    tds[number].style.backgroundColor = 'red'
+    tds[number - 1].style.backgroundColor = 'red'
   }
 
   for (let td of tds) {
