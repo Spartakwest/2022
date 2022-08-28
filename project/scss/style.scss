@@ -14,11 +14,14 @@ body {
   align-items: center;
   .header {
     flex: 1 1 auto;
-    font-size: 4rem;
+    font-size: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  .button {
+    flex: 1 1 auto;
   }
   .table-div {
     flex: 0 1 auto;

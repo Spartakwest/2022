@@ -114,7 +114,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  font-size: 4rem;
+  font-size: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,6 +125,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+.div1 .button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 .div1 .table-div {
   -webkit-box-flex: 0;
