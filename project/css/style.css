@@ -87,12 +87,8 @@ h6 {
 }
 
 /*-----------------------------------------*/
-.wrapper {
-  min-height: 100%;
-  overflow: hidden;
-}
-
-._conteiner {
-  max-width: 1046px;
-  margin: 0 auto;
+td {
+  border:  1px solid black;
+  text-align: center;
+  padding: 3px;
 }
