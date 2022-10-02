@@ -1,4 +1,4 @@
-* {
+/** {
   padding: 0;
   margin: 0;
   border: 0;
@@ -84,6 +84,29 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 400;
-}
+}*/
 
 /*-----------------------------------------*/
+.wrapper {
+  position: relative;
+}
+.elem {
+padding: 5px;
+font-size: 18px;
+}
+.wrapper ul{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: white;
+}
+.wrapper li{
+  border: 1px solid gray;
+  font-size: 18px;
+  padding: 5px;
+}
+.wrapper li:hover{
+  border: 1px solid black;
+  cursor: pointer;
+}
