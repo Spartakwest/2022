@@ -1,4 +1,4 @@
-* {
+/** {
   padding: 0;
   margin: 0;
   border: 0;
@@ -85,5 +85,8 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
-
+*/
 /*-----------------------------------------*/
+.spoiler:not(.active) {
+  display: none;
+}
