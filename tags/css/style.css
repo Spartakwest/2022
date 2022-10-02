@@ -1,4 +1,4 @@
-* {
+/** {
   padding: 0;
   margin: 0;
   border: 0;
@@ -87,3 +87,29 @@ h6 {
 }
 
 /*-----------------------------------------*/
+
+.wrapper {
+  margin: 0 auto;
+  width: 400px;
+}
+.menu a{
+  margin-right: 5px;
+  display: inline-block;
+  padding: 10px;
+  color: black;
+}
+.menu a:hover{
+  background: #f8f8f8;
+}
+.menu a.active {
+  border-color: transparent;
+  background: #f2f2f2;
+}
+.tabs .tab:not(.active) {
+  display: none;
+}
+.tabs .tab {
+  padding: 10px;
+  background: #f2f2f2;
+  height: 300px;
+}
