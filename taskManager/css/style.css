@@ -1,4 +1,4 @@
-* {
+/** {
   padding: 0;
   margin: 0;
   border: 0;
@@ -84,6 +84,33 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 400;
-}
+}*/
 
 /*-----------------------------------------*/
+body {
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+.list span{
+  margin-right: 5px;
+}
+.list .remove, .list .complete{
+  color: blue;
+  cursor: pointer;
+}
+.list .remove:hover, .list .complete:hover {
+  text-decoration: underline;
+}
+.done {
+  text-decoration: line-through;
+}
